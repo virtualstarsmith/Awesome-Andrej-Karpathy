@@ -1,5 +1,6 @@
 [⬆️ Back to English](./README.md)
 > 一份精选地图：Andrej Karpathy 的开源遗产以及在他思想之上构建的 200+ 社区项目 —— 从 `micrograd` 到 `LLM Wiki`，从 `Software 2.0` 到 `Vibe Coding`。
+> **注**：这是一份遵循 `awesome-*` 惯例的精选列表。
 
 ## 图例
 - ⭐ Karpathy 本人维护的官方仓库或 gist
