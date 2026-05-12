@@ -1,8 +1,6 @@
 [⬆️ Back to English](./README.md)
 > 一份精选地图：Andrej Karpathy 的开源遗产以及在他思想之上构建的 200+ 社区项目 —— 从 `micrograd` 到 `LLM Wiki`，从 `Software 2.0` 到 `Vibe Coding`。
 
-**状态**：面向后续 GitHub 仓库的 Notion 工作草稿。下面的纯 bullet 词条格式已经符合 `awesome-*` 惯例，稍作清理即可 `git push`。
-
 ## 图例
 - ⭐ Karpathy 本人维护的官方仓库或 gist
 - 🌟 该子派系的事实标准 / 旗舰项目
@@ -28,13 +26,13 @@
   - [强化学习入门](#强化学习入门)
 - [概念与宣言](#概念与宣言)
 - [社区同人项目](#社区同人项目)
-  - [LLM Wiki](#llm-wiki-zh)
-  - `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills-zh)
-  - [AutoResearch](#autoresearch-zh)
-  - [NanoGPT speedrun](#nanogpt-speedrun-zh)
-  - [Recipe for Training NN](#recipe-for-training-nn-zh)
-  - [LLM OS](#llm-os-zh)
-  - [Vibe Coding](#vibe-coding-zh)
+  - [LLM Wiki](#llm-wiki)
+  - [`CLAUDE.md` / Karpathy Skills](#claudemd-karpathy-skills)
+  - [AutoResearch](#autoresearch)
+  - [NanoGPT speedrun](#nanogpt-speedrun)
+  - [Recipe for Training NN](#recipe-for-training-nn)
+  - [LLM OS](#llm-os)
+  - [Vibe Coding](#vibe-coding)
   - [Pong from Pixels 复现](#pong-from-pixels-复现)
   - [nn-zero-to-hero 配套教材](#nn-zero-to-hero-配套教材)
   - [nanochat 复现](#nanochat-复现)
@@ -43,7 +41,7 @@
   - [多语言移植 (microgpt / minbpe / llm.c / llama2.c)](#多语言移植)
   - [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)
   - [Graphify / 原始文件夹优先派](#graphify--原始文件夹优先派)
-  - [Agentic Engineering](#agentic-engineering-zh)
+  - [Agentic Engineering](#agentic-engineering)
   - [HN Time Capsule](#hn-time-capsule-zh)
   - [AI 职业暴露](#ai-职业暴露)
   - [Idea File 元标准](#idea-file-元标准)
@@ -477,7 +475,7 @@
 ---
 
 ## 免责声明
-> **警告**: è¿æ¯ä¸ä»½**ç²¾éåè¡¨ï¼ä¸æ¯å®¡è®¡æ¥å**ãæåé¡¹ç®ç±åèªä½èåå»ºå¹¶ç»´æ¤ãæä»¬ä¸å®¡è®¡ãä¸èä¹¦ãä¸ä¿è¯ä»»ä½é¡¹ç®çå®å¨æ§ãæ­£ç¡®æ§æè®¸å¯è¯åè§ã
+> **警告**：这是一份**精选列表，不是审计报告**。所列项目由各自作者创建并维护。我们不审计、不背书、不保证任何项目的安全性、正确性或许可证合规。
 社区 skills、agents、`CLAUDE.md` 文件可能包含 prompt 注入、工具投毒、隐藏 payload、不安全数据处理等风险。在特权环境中安装或运行任何项目（包括其依赖）之前，请自行复查。
 星标、fork、许可证、维护状态变化很快。本表数据最后核对于 **2026-05-09**，发布前必须重新核实。
 ---

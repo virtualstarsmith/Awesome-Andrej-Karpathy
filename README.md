@@ -6,7 +6,7 @@
 
 ## Legend
 - ⭐ Official Karpathy repository or gist
-- 🌟 De-facto standard / flagship of its sub-派系
+- 🌟 De-facto standard / flagship of its sub-lineage
 - 🇨🇳 Chinese-language project
 - 📺 Video or talk
 - 📖 Blog post or essay
@@ -30,7 +30,7 @@
 - [Concepts & Manifestos](#concepts--manifestos)
 - [Community Implementations](#community-implementations)
   - [LLM Wiki](#llm-wiki)
-  - `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills)
+  - [`CLAUDE.md` / Karpathy Skills](#claudemd-karpathy-skills)
   - [AutoResearch](#autoresearch)
   - [NanoGPT speedrun](#nanogpt-speedrun)
   - [Recipe for Training NN](#recipe-for-training-nn)
@@ -42,8 +42,8 @@
   - [LLM Council forks](#llm-council-forks)
   - [reader3 forks](#reader3-forks)
   - [Multi-language ports (microgpt / minbpe / llm.c / llama2.c)](#multi-language-ports)
-  - [GPT minimal derivatives & cross-modal](#gpt-minimal-derivatives--cross-modal)
-  - [Graphify / Raw-folder-first](#graphify--raw-folder-first)
+  - [GPT minimal derivatives & cross-modal](#gpt-minimal-derivatives-cross-modal)
+  - [Graphify / Raw-folder-first](#graphify-raw-folder-first)
   - [Agentic Engineering](#agentic-engineering)
   - [HN Time Capsule](#hn-time-capsule)
   - [AI Job Exposure](#ai-job-exposure)
@@ -147,7 +147,7 @@
 - 🇨🇳 [chengjialu8888/LLM-Wiki-KB](https://github.com/chengjialu8888) - Simplified-Chinese implementation.
 ### `CLAUDE.md` / Karpathy Skills
 > Seed: 🪧 Agentic engineering tweet series (2025/12 → 2026/01) + 📺 [Sequoia AI Ascent: From Vibe Coding to Agentic Engineering](https://www.youtube.com/watch?v=96jN2OCOfLs) (2026/04).
-- 🌟 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) - Compresses Karpathy's scattered X observations into a single `CLAUDE.md` (4 behavioral rules). **★119K**, 11.9K forks; the de-facto standard of this 派系.
+- 🌟 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) - Compresses Karpathy's scattered X observations into a single `CLAUDE.md` (4 behavioral rules). **★119K**, 11.9K forks; the de-facto standard of this lineage.
 - [renezander030 / Karpathy-skills `CLAUDE.md` v2 (gist)](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2)(https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) - Extends forrestchang with 6 runtime rules from shipping `fixclaw`; covers prompt-injection and budget guards.
 - [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer built on Claude Agent SDK + Google ADK; "Scientific Agent Skills" framing.
 - [Smithbox-ai/ControlFlow](https://github.com/Smithbox-ai/ControlFlow) - Karpathy-skills idea forked into a more structured ControlFlow agent.
@@ -187,7 +187,7 @@
 - [revis · multi-agent autoresearch fork](https://www.reddit.com/r/LocalLLaMA/) - Reddit-discussed fork that adds multi-agent collaboration on top of the canonical loop.
 ### NanoGPT speedrun
 > Seed: ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) + ⭐ [llm.c](https://github.com/karpathy/llm.c) training baselines.
-- 🌟 [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) - 8×H100 training-time speedrun, currently **127.7s** (down from 8.2 min one year prior). Standard of this 派系.
+- 🌟 [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) - 8×H100 training-time speedrun, currently **127.7s** (down from 8.2 min one year prior). Standard of this lineage.
 - ⚙️ [KellerJordan/Muon](https://kellerjordan.github.io/posts/muon/) - Derived optimizer; spawned MARS / SWAN / AdaMuon variants.
 - [tyler-romero/nanogpt-speedrun](https://github.com/tyler-romero/nanogpt-speedrun) - Reproduces modded-nanoGPT on 2×RTX 4090, logs every gain.
 - [alexjc/nanogpt-speedrun](https://github.com/alexjc/nanogpt-speedrun) - Consumer-grade speedrun.
@@ -369,7 +369,7 @@
 - 📚 [jordimas/awesome-agentic-engineering](https://github.com/jordimas/awesome-agentic-engineering) - Curated list of Agentic Engineering tools, talks, and case studies.
 - [software-mansion/agentic-engineering](https://github.com/software-mansion/agentic-engineering) - Production-grade Agentic Engineering scaffolding (skills + evals + safety).
 - 📚 [EthicalML/awesome-agentic-engineering-resources](https://github.com/EthicalML/awesome-agentic-engineering-resources) - Ethical-ML community curation.
-- [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer scaffold (also cross-listed under `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills)).
+- [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer scaffold (also cross-listed under [`CLAUDE.md` / Karpathy Skills](#claudemd--karpathy-skills)).
 ### HN Time Capsule
 > Seed: 📖 [Auto-grading decade-old HN](http://karpathy.github.io/) (2025/12/10) + ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule). LLM-jury retrospective on old predictions.
 - ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule) - Auto-grades 10-year-old Hacker News predictions with an LLM jury.
@@ -389,7 +389,7 @@
 - [ranton256/microgpt_jl](https://github.com/ranton256/microgpt_jl) - Julia port of the [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95).
 - 📖 [Deep Neural Nets: 33 years ago](http://karpathy.github.io/2022/03/14/lecun1989/) (2022/03) → [teaching-on-testbeds/deep-nets-reproducing](https://github.com/teaching-on-testbeds/deep-nets-reproducing) - Classroom reproduction of LeCun 1989, plus Chameleon Cloud Trovi reproducible artifact.
 ### Concept citations layer
-> Karpathy thought-pieces that mostly live as in-README citations rather than spawning their own sub-派系. Listed here so contributors don't go looking for a missing subsection.
+> Karpathy thought-pieces that mostly live as in-README citations rather than spawning their own sub-lineage. Listed here so contributors don't go looking for a missing subsection.
 - 🪧 [The Space of Minds](https://x.com/karpathy) (2025/11/29) - Referenced in skills/wiki READMEs.
 - 🪧 Animals vs Ghosts ([Dwarkesh Podcast 2025/10](https://www.dwarkeshpatel.com/)) - Referenced in agentic-engineering READMEs.
 - 🪧 Verifiability tweet - Cited verbatim by [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills).
@@ -473,7 +473,7 @@ Contributions are welcome. Once this list lives on GitHub, see `CONTRIBUTING.md`
 ```javascript
 - [author/repo](https://github.com/author/repo) - One-line description ending with a period.
 ```
-Use the appropriate prefix emoji from the [Legend](#legend). Add 🇨🇳 for Chinese-language projects. Multi-language ports go under [Multi-language ports](#multi-language-ports) (microgpt / minbpe / llm.c / llama2.c) or [GPT minimal derivatives](#gpt-minimal-derivatives--cross-modal) (minGPT / nanoGPT). New 派系 require a matching idea seed in [Concepts & Manifestos](#concepts--manifestos).
+Use the appropriate prefix emoji from the [Legend](#legend). Add 🇨🇳 for Chinese-language projects. Multi-language ports go under [Multi-language ports](#multi-language-ports) (microgpt / minbpe / llm.c / llama2.c) or [GPT minimal derivatives](#gpt-minimal-derivatives--cross-modal) (minGPT / nanoGPT). New lineage require a matching idea seed in [Concepts & Manifestos](#concepts--manifestos).
 **PR title**: `Add: author/repo` or `Update: author/repo`.
 ---
 
