@@ -3,6 +3,7 @@
 **Language / 语言**：[English](#about-andrej-karpathy) · [简体中文 / Chinese](./README.zh-CN.md)
 > A curated map of Andrej Karpathy's open-source legacy and the 200+ community projects built on his ideas — from `micrograd` to `LLM Wiki`, from `Software 2.0` to `Vibe Coding`.
 > **Note**: This is a curated awesome-list following `awesome-*` conventions.
+
 ## Legend
 - ⭐ Official Karpathy repository or gist
 - 🌟 De-facto standard / flagship of its sub-派系
@@ -13,47 +14,49 @@
 - 🎓 Course / lecture series
 - ⚙️ Framework / library
 - 📚 Awesome-list / curation
+
 ## Contents
 - [About Andrej Karpathy](#about-andrej-karpathy)
 - [Foundational Repos](#foundational-repos)
-	- [Educational primitives](#educational-primitives)
-	- [Minimal GPT implementations](#minimal-gpt-implementations)
-	- [Full-stack ChatGPT speedrun](#full-stack-chatgpt-speedrun)
-	- [Reject the inevitability of PyTorch](#reject-the-inevitability-of-pytorch)
-	- [Single-file inference](#single-file-inference)
-	- [Tokenizer from scratch](#tokenizer-from-scratch)
-	- [RNN era](#rnn-era)
-	- [Browser-side deep learning](#browser-side-deep-learning)
-	- [Reinforcement learning intro](#reinforcement-learning-intro)
+  - [Educational primitives](#educational-primitives)
+  - [Minimal GPT implementations](#minimal-gpt-implementations)
+  - [Full-stack ChatGPT speedrun](#full-stack-chatgpt-speedrun)
+  - [Reject the inevitability of PyTorch](#reject-the-inevitability-of-pytorch)
+  - [Single-file inference](#single-file-inference)
+  - [Tokenizer from scratch](#tokenizer-from-scratch)
+  - [RNN era](#rnn-era)
+  - [Browser-side deep learning](#browser-side-deep-learning)
+  - [Reinforcement learning intro](#reinforcement-learning-intro)
 - [Concepts & Manifestos](#concepts--manifestos)
 - [Community Implementations](#community-implementations)
-	- [LLM Wiki](#llm-wiki)
-	- `CLAUDE.md`[ / Karpathy Skills](#claudemd--karpathy-skills)
-	- [AutoResearch](#autoresearch)
-	- [NanoGPT speedrun](#nanogpt-speedrun)
-	- [Recipe for Training NN](#recipe-for-training-nn)
-	- [LLM OS](#llm-os)
-	- [Vibe Coding](#vibe-coding)
-	- [Pong from Pixels reproductions](#pong-from-pixels-reproductions)
-	- [nn-zero-to-hero workbooks](#nn-zero-to-hero-workbooks)
-	- [nanochat reproductions](#nanochat-reproductions)
-	- [LLM Council forks](#llm-council-forks)
-	- [reader3 forks](#reader3-forks)
-	- [Multi-language ports (microgpt / minbpe / llm.c / llama2.c)](#multi-language-ports)
-	- [GPT minimal derivatives & cross-modal](#gpt-minimal-derivatives--cross-modal)
-	- [Graphify / Raw-folder-first](#graphify--raw-folder-first)
-	- [Agentic Engineering](#agentic-engineering)
-	- [HN Time Capsule](#hn-time-capsule)
-	- [AI Job Exposure](#ai-job-exposure)
-	- [Idea File](#idea-file)
-	- [Micro seeds](#micro-seeds)
-	- [Concept citations layer](#concept-citations-layer)
+  - [LLM Wiki](#llm-wiki)
+  - `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills)
+  - [AutoResearch](#autoresearch)
+  - [NanoGPT speedrun](#nanogpt-speedrun)
+  - [Recipe for Training NN](#recipe-for-training-nn)
+  - [LLM OS](#llm-os)
+  - [Vibe Coding](#vibe-coding)
+  - [Pong from Pixels reproductions](#pong-from-pixels-reproductions)
+  - [nn-zero-to-hero workbooks](#nn-zero-to-hero-workbooks)
+  - [nanochat reproductions](#nanochat-reproductions)
+  - [LLM Council forks](#llm-council-forks)
+  - [reader3 forks](#reader3-forks)
+  - [Multi-language ports (microgpt / minbpe / llm.c / llama2.c)](#multi-language-ports)
+  - [GPT minimal derivatives & cross-modal](#gpt-minimal-derivatives--cross-modal)
+  - [Graphify / Raw-folder-first](#graphify--raw-folder-first)
+  - [Agentic Engineering](#agentic-engineering)
+  - [HN Time Capsule](#hn-time-capsule)
+  - [AI Job Exposure](#ai-job-exposure)
+  - [Idea File](#idea-file)
+  - [Micro seeds](#micro-seeds)
+  - [Concept citations layer](#concept-citations-layer)
 - [Talks & Writings](#talks--writings)
 - [Timeline 2015 → 2026](#timeline-2015--2026)
 - [Related Awesome Lists](#related-awesome-lists)
 - [Contributing](#contributing)
 - [Disclaimer](#disclaimer)
 - [License](#license)
+
 ## About Andrej Karpathy
 **Andrej Karpathy** is one of the few researchers who consistently ships *and* explains: stripping complex systems down to their algorithmic core, then publishing both the code and the lecture. Founding member of OpenAI (2015–2017, 2023–2024), former Sr. Director of AI at Tesla (Autopilot vision stack, 2017–2022), Stanford CS231n co-instructor, and PhD with Fei-Fei Li. In 2024 he founded [Eureka Labs](http://eurekalabs.ai), an AI-native school.
 - 🏠 [karpathy.ai](http://karpathy.ai)
@@ -61,23 +64,24 @@
 - 🐦 [x.com/karpathy](http://x.com/karpathy)
 - 🎓 [Neural Networks: Zero to Hero](http://karpathy.ai/zero-to-hero.html)
 ---
+
 ## Foundational Repos
 ### Educational primitives
-- ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - \~100 lines of autograd + \~50 lines of NN with a PyTorch-like API. Companion to Zero-to-Hero lecture 1.
+- ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - ~100 lines of autograd + ~50 lines of NN with a PyTorch-like API. Companion to Zero-to-Hero lecture 1.
 - ⭐ [karpathy/makemore](https://github.com/karpathy/makemore) - Character-level language model that walks bigram → MLP → RNN → Transformer in 5 stages.
 - ⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) - The canonical Zero-to-Hero notebook bundle covering every lecture.
 ### Minimal GPT implementations
-- ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - \~300-line PyTorch GPT with a teaching-grade addition demo (99.9% accuracy).
+- ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - ~300-line PyTorch GPT with a teaching-grade addition demo (99.9% accuracy).
 - ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) - The simplest, fastest repo for training/finetuning medium-sized GPTs (★57K+).
 ### Full-stack ChatGPT speedrun
-- ⭐ [karpathy/nanochat](https://github.com/karpathy/nanochat) - "The best ChatGPT \$100 can buy": single-node full-stack training + chat UI in \~8000 hand-written lines.
+- ⭐ [karpathy/nanochat](https://github.com/karpathy/nanochat) - "The best ChatGPT \$100 can buy": single-node full-stack training + chat UI in ~8000 hand-written lines.
 - ⭐ [karpathy/microgpt](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) - 200-line dependency-free Python: dataset, tokenizer, autograd, GPT, Adam, train, infer.
 - ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) - 630-line single-GPU training core that lets an agent edit `program.md` and run 5-minute experiment loops.
 - ⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council) - Multi-LLM "council": parallel answers, mutual scoring, Chairman LLM synthesizes the final reply.
 - ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) - EPUB chapter reader purpose-built for "reading books with an LLM". Hit 1.5K★ in 2 days.
 - ⭐ [karpathy/KarpathyTalk](https://github.com/karpathy/KarpathyTalk) (2026/04) - Experimental builders+agents shared platform built around the talks.
 ### Reject the inevitability of PyTorch
-- ⭐ [karpathy/llm.c](https://github.com/karpathy/llm.c) - Pure C/CUDA training of GPT-2/3 with a \~1000-line CPU reference. Karpathy explicitly invites ports to live as external repos.
+- ⭐ [karpathy/llm.c](https://github.com/karpathy/llm.c) - Pure C/CUDA training of GPT-2/3 with a ~1000-line CPU reference. Karpathy explicitly invites ports to live as external repos.
 ### Single-file inference
 - ⭐ [karpathy/llama2.c](https://github.com/karpathy/llama2.c) - Single-file C inference for Llama 2, plus PyTorch training scripts. The Karpathy repo with **the most multi-language ports**.
 ### Tokenizer from scratch
@@ -91,18 +95,20 @@
 ### Reinforcement learning intro
 - ⭐ [karpathy/pg-pong](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5) - 130-line NumPy policy-gradient agent for ATARI Pong. Companion to the *Pong from Pixels* essay.
 ---
+
 ## Concepts & Manifestos
 > Idea seeds for everything in [Community Implementations](#community-implementations) below.
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) (2017) - "Neural networks are a new kind of code; weights are the program."
 - 📺 [Software is Changing (Again)](https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again) (YC 2025) - English as the new programming language; Software 3.0 eats 1.0/2.0. [Annotated transcript](https://www.latent.space/p/s3).
 - 📺 [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) + 🪧 [LLM OS tweet](https://x.com/karpathy/status/1723140519554105733) (2023/11) - LLM as CPU, context as RAM, vector store as FS, tools as peripherals.
 - 🪧 [Vibe coding tweet](https://x.com/karpathy/status/1886192184808149383) + 📖 [MenuGen blog](https://karpathy.bearblog.dev/vibe-coding-menugen/) (2025/02) - "Fully give in to the vibes and forget the code even exists."
-- 🪧 [Agentic engineering / ](https://x.com/karpathy)`CLAUDE.md`[ series](https://x.com/karpathy) (2025/12 → 2026/01) - `CLAUDE.md` is the new system prompt; *skills* are the new function library.
+- 🪧 [Agentic engineering / `CLAUDE.md` series](https://x.com/karpathy) (2025/12 → 2026/01) - `CLAUDE.md` is the new system prompt; *skills* are the new function library.
 - ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) (2026/03) - Software 3.0 applied to research: agent rewrites `program.md`, runs experiments, repeats.
 - 🪧 [LLM Wiki gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) (2026/04) - Pre-compiled knowledge base + LLM renderer; an anti-RAG manifesto.
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/) (2019) - The "overfit a single batch first, then generalize" SOP.
 - 📖 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) (2015) - The most-shared blog post of the RNN era; spawned char-rnn ports in every language.
 ---
+
 ## Community Implementations
 > Each subsection lists projects whose README/About explicitly cites a Karpathy repo, essay, or tweet. Stars/forks change fast — verify before publishing.
 ### LLM Wiki
@@ -142,13 +148,13 @@
 ### `CLAUDE.md` / Karpathy Skills
 > Seed: 🪧 Agentic engineering tweet series (2025/12 → 2026/01) + 📺 [Sequoia AI Ascent: From Vibe Coding to Agentic Engineering](https://www.youtube.com/watch?v=96jN2OCOfLs) (2026/04).
 - 🌟 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) - Compresses Karpathy's scattered X observations into a single `CLAUDE.md` (4 behavioral rules). **★119K**, 11.9K forks; the de-facto standard of this 派系.
-- [renezander030 / Karpathy-skills ](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2)`CLAUDE.md`[ v2 (gist)](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) - Extends forrestchang with 6 runtime rules from shipping `fixclaw`; covers prompt-injection and budget guards.
+- [renezander030 / Karpathy-skills `CLAUDE.md` v2 (gist)](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2)(https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) - Extends forrestchang with 6 runtime rules from shipping `fixclaw`; covers prompt-injection and budget guards.
 - [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer built on Claude Agent SDK + Google ADK; "Scientific Agent Skills" framing.
 - [Smithbox-ai/ControlFlow](https://github.com/Smithbox-ai/ControlFlow) - Karpathy-skills idea forked into a more structured ControlFlow agent.
 - [PBNZ/newton-skill](https://github.com/PBNZ/newton-skill) - Single "Newton-style first-principles" skill derived from the series.
 - 📚 [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) - Curated list of 235 Claude skills with sources tracing back to forrestchang.
 - [mattpocock/skills](https://github.com/mattpocock/skills) - Matt Pocock's TypeScript-flavored skills collection.
-- [karpathy/llm-council · ](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md)`CLAUDE.md`[ (canonical example)](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md) - Karpathy's own per-project `CLAUDE.md` (166 lines, technical notes for LLM Council).
+- [karpathy/llm-council · `CLAUDE.md` (canonical example)](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md) - Karpathy's own per-project `CLAUDE.md` (166 lines, technical notes for LLM Council).
 ### AutoResearch
 > Seed: ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) (2026/03).
 **Domain transfers**
@@ -259,7 +265,7 @@
 - 🌟 [scasella/nanochat-mlx](https://github.com/scasella/nanochat-mlx) - Self-contained MLX port; one `--depth` dial controls everything. No PyTorch.
 - [ettrickshepherd/mlx_nanochat](https://github.com/tkwn2080/mlx_nanochat) - Alternative full-stack MLX implementation (tokenizer + pretrain + SFT + chat + eval).
 - [vithursant/nanoGPT_mlx](https://github.com/vithursant/nanoGPT_mlx) - Earlier nanoGPT → MLX port that paved the way; M3 Pro 0.37 it/s on Shakespeare.
-- [zsiegel/mlx-gpt](https://github.com/zsiegel/mlx-gpt) - GPT-from-scratch alongside the Karpathy video, trained on M4 Max in \~30 min.
+- [zsiegel/mlx-gpt](https://github.com/zsiegel/mlx-gpt) - GPT-from-scratch alongside the Karpathy video, trained on M4 Max in ~30 min.
 - [ediestel/picochat-mlx](https://github.com/ediestel/picochat-mlx) - Minimalist Apple Silicon MLX port.
 **Homelab / consumer GPU**
 - 🌟 [matt-langston/nanochat-dgx-spark](https://github.com/matt-langston/nanochat-dgx-spark) - 2× Blackwell desktop GPUs running the full pipeline; 62.6h training log finding 17 bugs ([discussion #710](https://github.com/karpathy/nanochat/discussions/710)).
@@ -267,7 +273,7 @@
 - *Reproducing nanochat in Colab Single GPU* - DeepWiki + Gemini compresses nanochat onto a single Colab GPU ([Reddit](https://www.reddit.com/r/LocalLLaMA/comments/1o76ev6)).
 - [saranormous/supa-beginna-nanochat](https://github.com/karpathy/nanochat/discussions/677) - Pre-cloud laptop walkthrough so every stage is understood before renting a GPU.
 **Adjacent / faster minimal cores**
-- [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - \~10× speedup over microgpt (also listed under autoresearch).
+- [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - ~10× speedup over microgpt (also listed under autoresearch).
 - [chrisjmccormick / Exploring Nanochat](https://github.com/KellerJordan/modded-nanogpt/discussions/206) - Cross-pollination notes between modded-nanogpt and nanochat code bases.
 ### LLM Council forks
 > Seed: ⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council) (★18.5K, 3.6K forks; 3-stage council: collect → anonymized peer rank → Chairman synth).
@@ -303,11 +309,11 @@
 > Seeds: ⭐ [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) · ⭐ [minbpe](https://github.com/karpathy/minbpe) · ⭐ [llm.c](https://github.com/karpathy/llm.c) · ⭐ [llama2.c](https://github.com/karpathy/llama2.c).
 **microgpt ports**
 - [mplekh/rust-microgpt](https://github.com/mplekh/rust-microgpt) - Single-file Rust port.
-- [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - \~10× faster, also listed under nanochat.
+- [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - ~10× faster, also listed under nanochat.
 **minbpe ports**
-- [justinhj/minbpe-cc](https://github.com/justinhj/minbpe-cc) - C++ port (\~50× faster training).
+- [justinhj/minbpe-cc](https://github.com/justinhj/minbpe-cc) - C++ port (~50× faster training).
 - [dorjeduck/minbpe.mojo](https://github.com/dorjeduck/minbpe.mojo) - Mojo port.
-- [kuprel/minbpe-pytorch](https://github.com/kuprel/minbpe-pytorch) - PyTorch / CUDA acceleration (\~120× faster).
+- [kuprel/minbpe-pytorch](https://github.com/kuprel/minbpe-pytorch) - PyTorch / CUDA acceleration (~120× faster).
 - [gnp/minbpe-rs](https://github.com/gnp/minbpe-rs) - Rust port.
 - [Jaward/mlx-minbpe](https://github.com/Jaward/mlx-minbpe) - MLX port for Apple Silicon.
 - [minbpe-hs](https://www.reddit.com/r/haskell/comments/1czkpk5/) - Haskell port.
@@ -330,7 +336,7 @@
 - [`mukel/llama2.java`](https://github.com/mukel/llama2.java) - Java single-file port (Llama 2 7B at 1.6 tok/s).
 - [`mukel/llama3.java`](https://github.com/mukel/llama3.java) - Successor for Llama 3 with `--chat`.
 - [`neoremind/llama2.java`](https://github.com/neoremind/llama2.java) - Alternative Java port; matches C performance on fp32 7B.
-- [`cgbur/llama2.zig`](https://github.com/cgbur/llama2.zig) - Zig SIMD \~5× speedup.
+- [`cgbur/llama2.zig`](https://github.com/cgbur/llama2.zig) - Zig SIMD ~5× speedup.
 - [`thxcode/llm-box`](https://pkg.go.dev/github.com/thxcode/llm-box/port/llama2.c) - Go port (`port/llama2.c`).
 - ⚙️ [huggingface/candle](https://github.com/huggingface/candle) - HuggingFace Rust framework; `candle-llama` evolved from llama2.c.
 ### GPT minimal derivatives & cross-modal
@@ -363,7 +369,7 @@
 - 📚 [jordimas/awesome-agentic-engineering](https://github.com/jordimas/awesome-agentic-engineering) - Curated list of Agentic Engineering tools, talks, and case studies.
 - [software-mansion/agentic-engineering](https://github.com/software-mansion/agentic-engineering) - Production-grade Agentic Engineering scaffolding (skills + evals + safety).
 - 📚 [EthicalML/awesome-agentic-engineering-resources](https://github.com/EthicalML/awesome-agentic-engineering-resources) - Ethical-ML community curation.
-- [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer scaffold (also cross-listed under `CLAUDE.md`[ / Karpathy Skills](#claudemd--karpathy-skills)).
+- [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer scaffold (also cross-listed under `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills)).
 ### HN Time Capsule
 > Seed: 📖 [Auto-grading decade-old HN](http://karpathy.github.io/) (2025/12/10) + ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule). LLM-jury retrospective on old predictions.
 - ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule) - Auto-grades 10-year-old Hacker News predictions with an LLM jury.
@@ -375,11 +381,11 @@
 - [0xtreme/aus-jobs](https://github.com/0xtreme/aus-jobs) - Australia-specific fork with localized occupation taxonomy.
 ### Idea File
 > Seed: 🪧 [`IDEA.md`](https://x.com/karpathy/status/2040470801506541998)[ tweet](https://x.com/karpathy/status/2040470801506541998) (2026/04/04). A per-repo idea log, sibling to `README.md` and `AGENTS.md`.
-- [pithpusher/](https://github.com/pithpusher/IDEA.md)`IDEA.md` - CC0 standardization proposal for `IDEA.md`.
+- [pithpusher/IDEA.md](https://github.com/pithpusher/IDEA.md) - CC0 standardization proposal for `IDEA.md`.
 - 📚 [GitHub topic: idea-file](https://github.com/topics/idea-file) - Topic created post-tweet; collects early `IDEA.md` adopters.
 ### Micro seeds
 > Single-project seeds kept together so they don't get lost.
-- 🪧 `HELLO.md`[ gist](https://gist.github.com/karpathy/) (2026/04/21) - "Agent free time" concept (27★ / 3 forks). No mature derivatives yet, but heavy discussion.
+- 🪧 [`HELLO.md` gist](https://gist.github.com/karpathy/) (2026/04/21) - "Agent free time" concept (27★ / 3 forks). No mature derivatives yet, but heavy discussion.
 - [ranton256/microgpt_jl](https://github.com/ranton256/microgpt_jl) - Julia port of the [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95).
 - 📖 [Deep Neural Nets: 33 years ago](http://karpathy.github.io/2022/03/14/lecun1989/) (2022/03) → [teaching-on-testbeds/deep-nets-reproducing](https://github.com/teaching-on-testbeds/deep-nets-reproducing) - Classroom reproduction of LeCun 1989, plus Chameleon Cloud Trovi reproducible artifact.
 ### Concept citations layer
@@ -392,6 +398,7 @@
 - 📖 2025 LLM Year in Review - Anchor essay; widely cited.
 - 📄 [arXiv:2601.07573 — A Model of Artificial Jagged Intelligence](https://arxiv.org/abs/2601.07573) - Academic operationalization of "jagged intelligence".
 ---
+
 ## Talks & Writings
 ### Long-form talks
 - 📺 [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) (2023/11, 1h) - First systematic LLM-OS framing.
@@ -411,6 +418,7 @@
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383) (2025/02)
 - 🪧 LLM Wiki / `CLAUDE.md` / AutoResearch series (2025/12 → 2026/04) - see [@karpathy](https://x.com/karpathy).
 ---
+
 ## Timeline 2015 → 2026
 | Date | Event | Lineage |
 |---|---|---|
@@ -437,6 +445,7 @@
 | 2026/04 | LLM Wiki gist + KarpathyTalk + reader3 | LLM Wiki / reading agent |
 | 2026/04 | llm-council released | multi-model collaboration |
 ---
+
 ## Related Awesome Lists
 Lists in adjacent ecosystems where Karpathy's ideas show up explicitly:
 - 📚 [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) - 1000+ agent skills (Claude Code, Codex, Cursor, Gemini CLI, …) — many derive from Karpathy's `CLAUDE.md` framing.
@@ -449,6 +458,7 @@ Lists in adjacent ecosystems where Karpathy's ideas show up explicitly:
 - 📚 [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - The mother list.
 - 📚 [andrew/ultimate-awesome](https://github.com/andrew/ultimate-awesome) - Every awesome list, refreshed daily.
 ---
+
 ## Contributing
 Contributions are welcome. Once this list lives on GitHub, see `CONTRIBUTING.md`. Until then the rules are:
 **Inclusion criteria** (one of A / B / C must be satisfied):
@@ -466,13 +476,15 @@ Contributions are welcome. Once this list lives on GitHub, see `CONTRIBUTING.md`
 Use the appropriate prefix emoji from the [Legend](#legend). Add 🇨🇳 for Chinese-language projects. Multi-language ports go under [Multi-language ports](#multi-language-ports) (microgpt / minbpe / llm.c / llama2.c) or [GPT minimal derivatives](#gpt-minimal-derivatives--cross-modal) (minGPT / nanoGPT). New 派系 require a matching idea seed in [Concepts & Manifestos](#concepts--manifestos).
 **PR title**: `Add: author/repo` or `Update: author/repo`.
 ---
+
 ## Disclaimer
 > **Warning**: This is a **curated list, not an audit**. Listed projects are created and maintained by their respective authors. We do not audit, endorse, or guarantee the security, correctness, or licensing of any listed project.
-	Community skills, agents, and `CLAUDE.md` files can contain prompt injections, tool poisoning, hidden payloads, or unsafe data-handling. Review every project (including its dependencies) yourself before installing or running it in a privileged environment.
-	Stars, forks, license, and maintenance status drift quickly. The data here was last reconciled on **2026-05-09** and must be re-verified before publishing.
+Community skills, agents, and `CLAUDE.md` files can contain prompt injections, tool poisoning, hidden payloads, or unsafe data-handling. Review every project (including its dependencies) yourself before installing or running it in a privileged environment.
+Stars, forks, license, and maintenance status drift quickly. The data here was last reconciled on **2026-05-09** and must be re-verified before publishing.
 ---
+
 ## License
-[!\[CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)\]([https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/))
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)]([https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/))
 To the extent possible under law, the maintainer has waived all copyright and related or neighboring rights to this work. Original theory and quotations remain © Andrej Karpathy ([karpathy.ai](http://karpathy.ai)).
 Upon publication to GitHub, this list will be released under [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/). Linked projects retain their own licenses (typically MIT or Apache-2.0).
 ---

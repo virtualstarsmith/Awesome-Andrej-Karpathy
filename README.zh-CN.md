@@ -1,7 +1,7 @@
 [⬆️ Back to English](./README.md)
 > 一份精选地图：Andrej Karpathy 的开源遗产以及在他思想之上构建的 200+ 社区项目 —— 从 `micrograd` 到 `LLM Wiki`，从 `Software 2.0` 到 `Vibe Coding`。
 
-	**状态**：面向后续 GitHub 仓库的 Notion 工作草稿。下面的纯 bullet 词条格式已经符合 `awesome-*` 惯例，稍作清理即可 `git push`（参见底部 [发布前清单](#pre-publish-checklist-zh)）。
+**状态**：面向后续 GitHub 仓库的 Notion 工作草稿。下面的纯 bullet 词条格式已经符合 `awesome-*` 惯例，稍作清理即可 `git push`。
 
 ## 图例
 - ⭐ Karpathy 本人维护的官方仓库或 gist
@@ -13,41 +13,42 @@
 - 🎓 课程或讲座系列
 - ⚙️ 框架 / 库
 - 📚 awesome 列表 / 精选
+
 ## 目录
 - [关于 Andrej Karpathy](#关于-andrej-karpathy)
 - [基础仓库](#基础仓库)
-	- [教学原语](#教学原语)
-	- [极简 GPT 实现](#极简-gpt-实现)
-	- [全栈 ChatGPT 速通](#全栈-chatgpt-速通)
-	- [拒绝 PyTorch 的必然性](#拒绝-pytorch-的必然性)
-	- [单文件推理](#单文件推理)
-	- [从零写分词器](#从零写分词器)
-	- [RNN 时代](#rnn-时代)
-	- [浏览器深度学习](#浏览器深度学习)
-	- [强化学习入门](#强化学习入门)
+  - [教学原语](#教学原语)
+  - [极简 GPT 实现](#极简-gpt-实现)
+  - [全栈 ChatGPT 速通](#全栈-chatgpt-速通)
+  - [拒绝 PyTorch 的必然性](#拒绝-pytorch-的必然性)
+  - [单文件推理](#单文件推理)
+  - [从零写分词器](#从零写分词器)
+  - [RNN 时代](#rnn-时代)
+  - [浏览器深度学习](#浏览器深度学习)
+  - [强化学习入门](#强化学习入门)
 - [概念与宣言](#概念与宣言)
 - [社区同人项目](#社区同人项目)
-	- [LLM Wiki](#llm-wiki-zh)
-	- `CLAUDE.md`[ / Karpathy Skills](#claudemd--karpathy-skills-zh)
-	- [AutoResearch](#autoresearch-zh)
-	- [NanoGPT speedrun](#nanogpt-speedrun-zh)
-	- [Recipe for Training NN](#recipe-for-training-nn-zh)
-	- [LLM OS](#llm-os-zh)
-	- [Vibe Coding](#vibe-coding-zh)
-	- [Pong from Pixels 复现](#pong-from-pixels-复现)
-	- [nn-zero-to-hero 配套教材](#nn-zero-to-hero-配套教材)
-	- [nanochat 复现](#nanochat-复现)
-	- [LLM Council 衍生](#llm-council-衍生)
-	- [reader3 衍生](#reader3-衍生)
-	- [多语言移植 (microgpt / minbpe / llm.c / llama2.c)](#多语言移植)
-	- [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)
-	- [Graphify / 原始文件夹优先派](#graphify--原始文件夹优先派)
-	- [Agentic Engineering](#agentic-engineering-zh)
-	- [HN Time Capsule](#hn-time-capsule-zh)
-	- [AI 职业暴露](#ai-职业暴露)
-	- [Idea File 元标准](#idea-file-元标准)
-	- [微型种子](#微型种子)
-	- [概念引文层](#概念引文层)
+  - [LLM Wiki](#llm-wiki-zh)
+  - `CLAUDE.md` / Karpathy Skills(#claudemd--karpathy-skills-zh)
+  - [AutoResearch](#autoresearch-zh)
+  - [NanoGPT speedrun](#nanogpt-speedrun-zh)
+  - [Recipe for Training NN](#recipe-for-training-nn-zh)
+  - [LLM OS](#llm-os-zh)
+  - [Vibe Coding](#vibe-coding-zh)
+  - [Pong from Pixels 复现](#pong-from-pixels-复现)
+  - [nn-zero-to-hero 配套教材](#nn-zero-to-hero-配套教材)
+  - [nanochat 复现](#nanochat-复现)
+  - [LLM Council 衍生](#llm-council-衍生)
+  - [reader3 衍生](#reader3-衍生)
+  - [多语言移植 (microgpt / minbpe / llm.c / llama2.c)](#多语言移植)
+  - [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)
+  - [Graphify / 原始文件夹优先派](#graphify--原始文件夹优先派)
+  - [Agentic Engineering](#agentic-engineering-zh)
+  - [HN Time Capsule](#hn-time-capsule-zh)
+  - [AI 职业暴露](#ai-职业暴露)
+  - [Idea File 元标准](#idea-file-元标准)
+  - [微型种子](#微型种子)
+  - [概念引文层](#概念引文层)
 - [演讲与文章](#演讲与文章)
 - [时间线 2015 → 2026](#时间线-2015--2026)
 - [相关 Awesome Lists](#相关-awesome-lists)
@@ -55,6 +56,7 @@
 - [免责声明](#免责声明)
 - [许可](#许可)
 - [发布前清单](#pre-publish-checklist-zh)
+
 ## 关于 Andrej Karpathy
 **Andrej Karpathy** 是少数几位「持续交付 *并且* 持续讲解」的研究者：把复杂系统剥到算法核心，再把代码与课程一并公开。OpenAI 创始成员（2015–2017，2023–2024）、特斯拉前 AI 高级总监（Autopilot 视觉栈，2017–2022）、斯坦福 CS231n 联合讲师、李飞飞门下博士。2024 年创办 [Eureka Labs](http://eurekalabs.ai)，一所 AI 原生学校。
 - 🏠 [karpathy.ai](http://karpathy.ai)
@@ -62,13 +64,14 @@
 - 🐦 [x.com/karpathy](http://x.com/karpathy)
 - 🎓 [Neural Networks: Zero to Hero](http://karpathy.ai/zero-to-hero.html)
 ---
+
 ## 基础仓库
 ### 教学原语
-- ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - \~100 行自动求导 + \~50 行神经网络，PyTorch 风格 API。Zero-to-Hero 第 1 课配套代码。
+- ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - ~100 行自动求导 + ~50 行神经网络，PyTorch 风格 API。Zero-to-Hero 第 1 课配套代码。
 - ⭐ [karpathy/makemore](https://github.com/karpathy/makemore) - 字符级语言模型，分 5 个阶段从 bigram → MLP → RNN → Transformer 一路演进。
 - ⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) - Zero-to-Hero 全部讲座的官方 notebook 合集。
 ### 极简 GPT 实现
-- ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - \~300 行 PyTorch GPT，附带教学级加法演示（99.9% 准确率）。
+- ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - ~300 行 PyTorch GPT，附带教学级加法演示（99.9% 准确率）。
 - ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) - 训练/微调中等规模 GPT 最简单、最快的仓库（★57K+）。
 ### 全栈 ChatGPT 速通
 - ⭐ [karpathy/nanochat](https://github.com/karpathy/nanochat) - 「\$100 能买到的最好 ChatGPT」：单机全栈训练 + 聊天 UI，约 8000 行手写代码。
@@ -78,7 +81,7 @@
 - ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) - 专为「让 LLM 陪你读书」打造的 EPUB 章节阅读器。两天破 1.5K★。
 - ⭐ [karpathy/KarpathyTalk](https://github.com/karpathy/KarpathyTalk)（2026/04） - 围绕演讲构建的「构建者 + 智能体共享平台」实验项目。
 ### 拒绝 PyTorch 的必然性
-- ⭐ [karpathy/llm.c](https://github.com/karpathy/llm.c) - 纯 C / CUDA 训练 GPT-2/3，附 \~1000 行 CPU 参考实现。Karpathy 明确鼓励将各种语言移植放在外部仓库。
+- ⭐ [karpathy/llm.c](https://github.com/karpathy/llm.c) - 纯 C / CUDA 训练 GPT-2/3，附 ~1000 行 CPU 参考实现。Karpathy 明确鼓励将各种语言移植放在外部仓库。
 ### 单文件推理
 - ⭐ [karpathy/llama2.c](https://github.com/karpathy/llama2.c) - 单文件 C 推理 Llama 2，附 PyTorch 训练脚本。**Karpathy 仓库中多语言移植最多的一个**。
 ### 从零写分词器
@@ -92,18 +95,20 @@
 ### 强化学习入门
 - ⭐ [karpathy/pg-pong](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5) - 130 行 NumPy 策略梯度智能体玩 ATARI Pong，《Pong from Pixels》一文的代码配套。
 ---
+
 ## 概念与宣言
 > 下面 [社区同人项目](#社区同人项目) 中所有内容的「思想种子」。
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)（2017） - 「神经网络是一种新的代码，权重就是程序。」
 - 📺 [Software is Changing (Again)](https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again)（YC 2025） - 英语就是新的编程语言；Software 3.0 吞食 1.0/2.0。[逐字稿注释](https://www.latent.space/p/s3)。
 - 📺 [Intro to Large Language Models](https://www.youtube.com/watch?v=zjkBMFhNj_g) + 🪧 [LLM OS 推](https://x.com/karpathy/status/1723140519554105733)（2023/11） - LLM 是 CPU、上下文是 RAM、向量库是文件系统、工具是外设。
 - 🪧 [Vibe coding 推](https://x.com/karpathy/status/1886192184808149383) + 📖 [MenuGen 博客](https://karpathy.bearblog.dev/vibe-coding-menugen/)（2025/02） - 「彻底沉浸于氛围，忘掉代码本身的存在。」
-- 🪧 [Agentic engineering / ](https://x.com/karpathy)`CLAUDE.md`[ 系列](https://x.com/karpathy)（2025/12 → 2026/01） - `CLAUDE.md` 是新的 system prompt；*skills* 是新的函数库。
+- 🪧 [Agentic engineering / `CLAUDE.md` 系列](https://x.com/karpathy)（2025/12 → 2026/01） - `CLAUDE.md` 是新的 system prompt；*skills* 是新的函数库。
 - ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch)（2026/03） - Software 3.0 应用于科研：智能体改写 `program.md`、跑实验、再迭代。
 - 🪧 [LLM Wiki gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)（2026/04） - 预先编译的知识库 + LLM 渲染器；一篇反 RAG 宣言。
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/)（2019） - 「先在一个 batch 上过拟合，再谈泛化」的训练 SOP。
 - 📖 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)（2015） - RNN 时代被转发最多的博客；催生了几乎所有语言的 char-rnn 移植。
 ---
+
 ## 社区同人项目
 > 每个子小节中收录的项目，其 README/About 都明确引用了某个 Karpathy 仓库、文章或推文。星标和 fork 数量变化很快，发布前请再次核对。
 ### LLM Wiki
@@ -143,13 +148,13 @@
 ### `CLAUDE.md` / Karpathy Skills
 > 思想种子：🪧 Agentic engineering 推文系列（2025/12 → 2026/01）+ 📺 [Sequoia AI Ascent: From Vibe Coding to Agentic Engineering](https://www.youtube.com/watch?v=96jN2OCOfLs)（2026/04）。
 - 🌟 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) - 把 Karpathy 散落在 X 上的观察压缩进一个 `CLAUDE.md`（4 条行为规则）。**★119K**，11.9K fork；本子派系的事实标准。
-- [renezander030 / Karpathy-skills ](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2)`CLAUDE.md`[ v2 (gist)](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) - 在 forrestchang 基础上扩展为 6 条来自 `fixclaw` 实战的运行时规则；覆盖 prompt 注入与预算护栏。
+- [renezander030 / Karpathy-skills `CLAUDE.md` v2 (gist)](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2)(https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) - 在 forrestchang 基础上扩展为 6 条来自 `fixclaw` 实战的运行时规则；覆盖 prompt 注入与预算护栏。
 - [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - 基于 Claude Agent SDK + Google ADK 的 Agentic ML Engineer；「Scientific Agent Skills」框架。
 - [Smithbox-ai/ControlFlow](https://github.com/Smithbox-ai/ControlFlow) - 把 Karpathy-skills 思路 fork 成更结构化的 ControlFlow agent。
 - [PBNZ/newton-skill](https://github.com/PBNZ/newton-skill) - 从该系列衍生的「牛顿式第一性原理」单 skill。
 - 📚 [alirezarezvani/claude-skills](https://github.com/alirezarezvani/claude-skills) - 235 个 Claude skill 的精选清单，源头追溯到 forrestchang。
 - [mattpocock/skills](https://github.com/mattpocock/skills) - Matt Pocock 的 TypeScript 风格 skills 合集。
-- [karpathy/llm-council · ](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md)`CLAUDE.md`[（官方范本）](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md) - Karpathy 自己仓库里的项目级 `CLAUDE.md`（166 行，LLM Council 的技术备忘）。
+- [karpathy/llm-council · `CLAUDE.md`（官方范本）](https://github.com/karpathy/llm-council/blob/master/CLAUDE.md) - Karpathy 自己仓库里的项目级 `CLAUDE.md`（166 行，LLM Council 的技术备忘）。
 ### AutoResearch
 > 思想种子：⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch)（2026/03）。
 **领域迁移**
@@ -306,9 +311,9 @@
 - [mplekh/rust-microgpt](https://github.com/mplekh/rust-microgpt) - 单文件 Rust 移植。
 - [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - 约 10× 提速，同样列于 nanochat 一节。
 **minbpe 移植**
-- [justinhj/minbpe-cc](https://github.com/justinhj/minbpe-cc) - C++ 移植（训练快 \~50×）。
+- [justinhj/minbpe-cc](https://github.com/justinhj/minbpe-cc) - C++ 移植（训练快 ~50×）。
 - [dorjeduck/minbpe.mojo](https://github.com/dorjeduck/minbpe.mojo) - Mojo 移植。
-- [kuprel/minbpe-pytorch](https://github.com/kuprel/minbpe-pytorch) - PyTorch / CUDA 加速（\~120×）。
+- [kuprel/minbpe-pytorch](https://github.com/kuprel/minbpe-pytorch) - PyTorch / CUDA 加速（~120×）。
 - [gnp/minbpe-rs](https://github.com/gnp/minbpe-rs) - Rust 移植。
 - [Jaward/mlx-minbpe](https://github.com/Jaward/mlx-minbpe) - 面向 Apple Silicon 的 MLX 移植。
 - [minbpe-hs](https://www.reddit.com/r/haskell/comments/1czkpk5/) - Haskell 移植。
@@ -331,7 +336,7 @@
 - [`mukel/llama2.java`](https://github.com/mukel/llama2.java) - Java 单文件移植（Llama 2 7B，1.6 tok/s）。
 - [`mukel/llama3.java`](https://github.com/mukel/llama3.java) - 后继 Llama 3 实现，带 `--chat`。
 - [`neoremind/llama2.java`](https://github.com/neoremind/llama2.java) - 另一份 Java 移植；fp32 7B 性能与 C 对齐。
-- [`cgbur/llama2.zig`](https://github.com/cgbur/llama2.zig) - Zig SIMD \~5× 提速。
+- [`cgbur/llama2.zig`](https://github.com/cgbur/llama2.zig) - Zig SIMD ~5× 提速。
 - [`thxcode/llm-box`](https://pkg.go.dev/github.com/thxcode/llm-box/port/llama2.c) - Go 移植（`port/llama2.c`）。
 - ⚙️ [huggingface/candle](https://github.com/huggingface/candle) - HuggingFace 的 Rust 框架；`candle-llama` 由 llama2.c 演化而来。
 ### GPT 极简衍生与跨模态
@@ -376,11 +381,11 @@
 - [0xtreme/aus-jobs](https://github.com/0xtreme/aus-jobs) - 澳大利亚特定 fork，含本地化职业分类。
 ### Idea File 元标准
 > 思想种子：🪧 [`IDEA.md`](https://x.com/karpathy/status/2040470801506541998)[ 推文](https://x.com/karpathy/status/2040470801506541998)（2026/04/04）。每个仓库一份的想法日志，`README.md` 和 `AGENTS.md` 的兄弟文件。
-- [pithpusher/](https://github.com/pithpusher/IDEA.md)`IDEA.md` - `IDEA.md` 的 CC0 标准化提案。
+- [pithpusher/IDEA.md](https://github.com/pithpusher/IDEA.md) - `IDEA.md` 的 CC0 标准化提案。
 - 📚 [GitHub topic: idea-file](https://github.com/topics/idea-file) - 推文后创建的 topic；收集早期 `IDEA.md` 采用者。
 ### 微型种子
 > 单项目种子集中放置，以免遗失。
-- 🪧 `HELLO.md`[ gist](https://gist.github.com/karpathy/)（2026/04/21）- "Agent free time" 概念（27★ / 3 forks）。尚无成熟衍生，但讨论热烈。
+- 🪧 [`HELLO.md` gist](https://gist.github.com/karpathy/)（2026/04/21）- "Agent free time" 概念（27★ / 3 forks）。尚无成熟衍生，但讨论热烈。
 - [ranton256/microgpt_jl](https://github.com/ranton256/microgpt_jl) - [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) 的 Julia 移植。
 - 📖 [Deep Neural Nets: 33 years ago](http://karpathy.github.io/2022/03/14/lecun1989/)（2022/03）→ [teaching-on-testbeds/deep-nets-reproducing](https://github.com/teaching-on-testbeds/deep-nets-reproducing) - LeCun 1989 的课堂复现，以及 Chameleon Cloud Trovi 可复现制品。
 ### 概念引文层
@@ -412,6 +417,7 @@
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383)（2025/02）
 - 🪧 LLM Wiki / `CLAUDE.md` / AutoResearch 系列（2025/12 → 2026/04） - 见 [@karpathy](https://x.com/karpathy)。
 ---
+
 ## 时间线 2015 → 2026
 | 日期 | 事件 | 谱系 |
 |---|---|---|
@@ -438,6 +444,7 @@
 | 2026/04 | LLM Wiki gist + KarpathyTalk + reader3 | LLM Wiki / 阅读 agent |
 | 2026/04 | llm-council 发布 | 多模型协作 |
 ---
+
 ## 相关 Awesome Lists
 相邻生态中明确出现 Karpathy 思想的列表：
 - 📚 [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) - 1000+ agent skills（Claude Code、Codex、Cursor、Gemini CLI…），多数源自 Karpathy 的 `CLAUDE.md` 框架。
@@ -450,6 +457,7 @@
 - 📚 [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - 母列表。
 - 📚 [andrew/ultimate-awesome](https://github.com/andrew/ultimate-awesome) - 每日刷新的所有 awesome 列表。
 ---
+
 ## 贡献指南
 欢迎贡献。仓库上线后请参考 `CONTRIBUTING.md`，在那之前规则如下：
 **收录标准**（A / B / C 满足任意一条）：
@@ -467,13 +475,15 @@
 请使用 [图例](#图例) 中的对应前缀 emoji。中文项目加 🇨🇳。多语言移植放在 [多语言移植](#多语言移植)（microgpt / minbpe / llm.c / llama2.c）或 [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)（minGPT / nanoGPT）。新派系需要在 [概念与宣言](#概念与宣言) 中有对应思想种子。
 **PR 标题**：`Add: author/repo` 或 `Update: author/repo`。
 ---
+
 ## 免责声明
 > **警告**: è¿æ¯ä¸ä»½**ç²¾éåè¡¨ï¼ä¸æ¯å®¡è®¡æ¥å**ãæåé¡¹ç®ç±åèªä½èåå»ºå¹¶ç»´æ¤ãæä»¬ä¸å®¡è®¡ãä¸èä¹¦ãä¸ä¿è¯ä»»ä½é¡¹ç®çå®å¨æ§ãæ­£ç¡®æ§æè®¸å¯è¯åè§ã
-	社区 skills、agents、`CLAUDE.md` 文件可能包含 prompt 注入、工具投毒、隐藏 payload、不安全数据处理等风险。在特权环境中安装或运行任何项目（包括其依赖）之前，请自行复查。
-	星标、fork、许可证、维护状态变化很快。本表数据最后核对于 **2026-05-09**，发布前必须重新核实。
+社区 skills、agents、`CLAUDE.md` 文件可能包含 prompt 注入、工具投毒、隐藏 payload、不安全数据处理等风险。在特权环境中安装或运行任何项目（包括其依赖）之前，请自行复查。
+星标、fork、许可证、维护状态变化很快。本表数据最后核对于 **2026-05-09**，发布前必须重新核实。
 ---
+
 ## 许可
-[!\[CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)\]([https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/))
+[![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)]([https://creativecommons.org/publicdomain/zero/1.0/](https://creativecommons.org/publicdomain/zero/1.0/))
 在法律允许范围内，维护者放弃本作品的全部著作权及邻接权。原始理论与引言著作权 © Andrej Karpathy（[karpathy.ai](http://karpathy.ai)）。
 发布到 GitHub 后本列表将以 [CC0-1.0](https://creativecommons.org/publicdomain/zero/1.0/) 释出。所链接的项目保留各自原许可证（多为 MIT 或 Apache-2.0）。
 ---
