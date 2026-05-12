@@ -1,4 +1,7 @@
+# Awesome Andrej Karpathy [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 [⬆️ Back to English](./README.md)
+**Language / 语言**：[English](./README.md) · [简体中文 / Chinese](#关于-andrej-karpathy)
 > 一份精选地图：Andrej Karpathy 的开源遗产以及在他思想之上构建的 200+ 社区项目 —— 从 `micrograd` 到 `LLM Wiki`，从 `Software 2.0` 到 `Vibe Coding`。
 > **注**：这是一份遵循 `awesome-*` 惯例的精选列表。
 
@@ -43,7 +46,7 @@
   - [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)
   - [Graphify / 原始文件夹优先派](#graphify--原始文件夹优先派)
   - [Agentic Engineering](#agentic-engineering)
-  - [HN Time Capsule](#hn-time-capsule-zh)
+  - [HN Time Capsule](#hn-time-capsule)
   - [AI 职业暴露](#ai-职业暴露)
   - [Idea File 元标准](#idea-file-元标准)
   - [微型种子](#微型种子)
@@ -54,7 +57,6 @@
 - [贡献指南](#贡献指南)
 - [免责声明](#免责声明)
 - [许可](#许可)
-- [发布前清单](#pre-publish-checklist-zh)
 
 ## 关于 Andrej Karpathy
 **Andrej Karpathy** 是少数几位「持续交付 *并且* 持续讲解」的研究者：把复杂系统剥到算法核心，再把代码与课程一并公开。OpenAI 创始成员（2015–2017，2023–2024）、特斯拉前 AI 高级总监（Autopilot 视觉栈，2017–2022）、斯坦福 CS231n 联合讲师、李飞飞门下博士。2024 年创办 [Eureka Labs](http://eurekalabs.ai)，一所 AI 原生学校。
@@ -297,9 +299,9 @@
 - [jacob-bd/llm-council-plus](https://github.com/jacob-bd/llm-council-plus) - 现代 UI fork，支持多 API + 网络搜索 + Ollama。
 ### reader3 衍生
 > 思想种子：⭐ [karpathy/reader3](https://github.com/karpathy/reader3)（★3.4K，456+ fork；「90% vibe-coded，目的就是演示如何用 LLM 读书」）。
-**独立重写**
+**独立重新实现**
 - [yongkangc/llmreader](https://github.com/yongkangc/llmreader) - 在 EPUB 之上加入 PDF 支持；以「LLMReader」为名重新包装。
-**原仓库上的 PR（规范 fork）**
+**原仓库上的 PR（正统 fork）**
 - [sharathdoes/reader3](https://github.com/sharathdoes) - ChatGroq LLM 聊天集成 + HTML UI（[PR](https://github.com/karpathy/reader3/pulls)）。
 - [jerithlawrence/reader3](https://github.com/jerithlawrence) - 段落 / 章节 / 整章复制按钮。
 - [HenokB/reader3](https://github.com/HenokB) - 上下方向键翻页。
@@ -369,6 +371,7 @@
 - 📚 [jordimas/awesome-agentic-engineering](https://github.com/jordimas/awesome-agentic-engineering) - Agentic Engineering 工具、演讲与案例的精选列表。
 - [software-mansion/agentic-engineering](https://github.com/software-mansion/agentic-engineering) - 生产级 Agentic Engineering 脚手架（skills + evals + safety）。
 - 📚 [EthicalML/awesome-agentic-engineering-resources](https://github.com/EthicalML/awesome-agentic-engineering-resources) - Ethical-ML 社区精选。
+- [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer 脚手架（同时收录于 [`CLAUDE.md` / Karpathy Skills](#claudemd-karpathy-skills)）。
 ### HN Time Capsule
 > 思想种子：📖 [Auto-grading decade-old HN](http://karpathy.github.io/)（2025/12/10）+ ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule)。LLM 陪审团对旧预测进行回顾性评分。
 - ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule) - 用 LLM 陪审团自动为十年前的 Hacker News 预测打分。
