@@ -1,4 +1,4 @@
-[⬆️ Back to English](#awesome-andrej-karpathy)
+[⬆️ Back to English](./README.md)
 > 一份精选地图：Andrej Karpathy 的开源遗产以及在他思想之上构建的 200+ 社区项目 —— 从 `micrograd` 到 `LLM Wiki`，从 `Software 2.0` 到 `Vibe Coding`。
 
 	**状态**：面向后续 GitHub 仓库的 Notion 工作草稿。下面的纯 bullet 词条格式已经符合 `awesome-*` 惯例，稍作清理即可 `git push`（参见底部 [发布前清单](#pre-publish-checklist-zh)）。

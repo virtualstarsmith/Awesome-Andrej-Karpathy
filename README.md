@@ -1,5 +1,5 @@
 # Awesome Andrej Karpathy [!\[Awesome](https://awesome.re/badge.svg)\]([https://awesome.re](https://awesome.re))
-**Language / 语言**：[English](#about-andrej-karpathy) · [简体中文 / Chinese](#-简体中文-·-chinese-version) · 在同一页面上下并存，点击跳转。
+**Language / 语言**：[English](#about-andrej-karpathy) · [简体中文 / Chinese](./README.zh-CN.md) · 在两个文件中并存，点击跳转。
 > A curated map of Andrej Karpathy's open-source legacy and the 200+ community projects built on his ideas — from `micrograd` to `LLM Wiki`, from `Software 2.0` to `Vibe Coding`.
 > **Note**: This is a curated awesome-list following `awesome-*` conventions.
 ## Legend
