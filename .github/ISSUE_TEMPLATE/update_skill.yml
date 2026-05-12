@@ -1,0 +1,17 @@
+name: Update entry
+description: Update an existing entry (star count, broken link, description)
+labels: ["update"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry to update
+      description: Which entry? (paste the current line from the README)
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: What should change?
+    validations:
+      required: true

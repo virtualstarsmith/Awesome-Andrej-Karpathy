@@ -1,0 +1,59 @@
+name: Add entry
+description: Suggest a new project for the list
+labels: ["add"]
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Project URL
+      description: GitHub repo or gist URL
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      description: Which section should this go in?
+      options:
+        - LLM Wiki
+        - CLAUDE.md / Karpathy Skills
+        - AutoResearch
+        - NanoGPT speedrun
+        - Recipe for Training NN
+        - LLM OS
+        - Vibe Coding
+        - Pong from Pixels reproductions
+        - nn-zero-to-hero workbooks
+        - nanochat reproductions
+        - LLM Council forks
+        - reader3 forks
+        - Multi-language ports
+        - GPT minimal derivatives & cross-modal
+        - Graphify / Raw-folder-first
+        - Agentic Engineering
+        - HN Time Capsule
+        - AI Job Exposure
+        - Idea File
+        - Micro seeds
+        - Concept citations layer
+        - Other (specify below)
+  - type: textarea
+    id: proof
+    attributes:
+      label: Karpathy connection
+      description: Where does the project cite Karpathy? (README link, tweet reference, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Suggested one-line description
+      description: "Follow the format: `- [author/repo](url) - Description ending with a period.`"
+  - type: checkboxes
+    id: criteria
+    attributes:
+      label: Inclusion criteria
+      options:
+        - label: "Official (maintained by Karpathy)"
+        - label: "Direct derivative (README says 'inspired by / port of / based on' a Karpathy project)"
+        - label: "Concept derivative (explicitly cites a named Karpathy concept)"
