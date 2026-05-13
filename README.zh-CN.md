@@ -28,6 +28,8 @@
   - [RNN 时代](#rnn-时代)
   - [浏览器深度学习](#浏览器深度学习)
   - [强化学习入门](#强化学习入门)
+  - [视觉 / 图像描述](#视觉--图像描述)
+  - [研究工具](#研究工具)
 - [概念与宣言](#概念与宣言)
 - [社区同人项目](#社区同人项目)
   - [LLM Wiki](#llm-wiki)
@@ -38,10 +40,12 @@
   - [LLM OS](#llm-os)
   - [Vibe Coding](#vibe-coding)
   - [Pong from Pixels 复现](#pong-from-pixels-复现)
+  - [char-rnn 移植与复现](#char-rnn-移植与复现)
   - [nn-zero-to-hero 配套教材](#nn-zero-to-hero-配套教材)
   - [nanochat 复现](#nanochat-复现)
   - [LLM Council 衍生](#llm-council-衍生)
   - [reader3 衍生](#reader3-衍生)
+  - [NeuralTalk / 图像描述](#neuraltalk--图像描述)
   - [多语言移植 (microgpt / minbpe / llm.c / llama2.c)](#多语言移植)
   - [GPT 极简衍生与跨模态](#gpt-极简衍生与跨模态)
   - [Graphify / 原始文件夹优先派](#graphify--原始文件夹优先派)
@@ -71,6 +75,9 @@
 - ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - ~100 行自动求导 + ~50 行神经网络，PyTorch 风格 API。Zero-to-Hero 第 1 课配套代码。
 - ⭐ [karpathy/makemore](https://github.com/karpathy/makemore) - 字符级语言模型，分 5 个阶段从 bigram → MLP → RNN → Transformer 一路演进。
 - ⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) - Zero-to-Hero 全部讲座的官方 notebook 合集。
+- ⭐ [karpathy/LLM101n](https://github.com/karpathy/LLM101n) - "Let's build a Storyteller" 完整课程，从零构建 LLM；Eureka Labs 的前身（★37K）。
+- ⭐ [karpathy/build-nanogpt](https://github.com/karpathy/build-nanogpt) - "Let's build GPT: from scratch, in code, spelled out" 讲座的视频+代码配套（★4.9K）。
+- ⭐ [karpathy/ng-video-lecture](https://github.com/karpathy/ng-video-lecture) - Zero-to-Hero nanoGPT 讲座的代码仓库（★4.6K）。
 ### 极简 GPT 实现
 - ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - ~300 行 PyTorch GPT，附带教学级加法演示（99.9% 准确率）。
 - ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) - 训练/微调中等规模 GPT 最简单、最快的仓库（★57K+）。
@@ -87,14 +94,22 @@
 - ⭐ [karpathy/llama2.c](https://github.com/karpathy/llama2.c) - 单文件 C 推理 Llama 2，附 PyTorch 训练脚本。**Karpathy 仓库中多语言移植最多的一个**。
 ### 从零写分词器
 - ⭐ [karpathy/minbpe](https://github.com/karpathy/minbpe) - 三段式教学实现（Basic / Regex / GPT4 三种分词器），与 *Let's build the GPT Tokenizer* 视频配套。
+- ⭐ [karpathy/rustbpe](https://github.com/karpathy/rustbpe) - "缺失的 tiktoken 训练代码"；Karpathy 自己的 Rust BPE 扩展（★454）。
 ### RNN 时代
 - ⭐ [karpathy/char-rnn](https://github.com/karpathy/char-rnn) - 当年那个 Torch/Lua 多层 RNN/LSTM/GRU 字符级语言模型，*Unreasonable Effectiveness of RNNs* 一文的代码后盾。
 - ⭐ [karpathy/min-char-rnn](https://gist.github.com/karpathy/d4dee566867f8291f086) - 100 行纯 NumPy 的 vanilla RNN（★4K+）。
 ### 浏览器深度学习
 - ⭐ [karpathy/convnetjs](https://github.com/karpathy/convnetjs) - JS 实现的 CNN/RL 训练库；很多人第一次「亲眼看到」反向传播就在这里。
 - ⭐ [karpathy/reinforcejs](https://github.com/karpathy/reinforcejs) - DP / SARSA / Q-learning / DQN / Policy Gradient 的 JS 实现，全部带 Web 演示。
+- ⭐ [karpathy/recurrentjs](https://github.com/karpathy/recurrentjs) - JavaScript 实现的深度 RNN 和 LSTM，附带自动微分（★981）。
 ### 强化学习入门
 - ⭐ [karpathy/pg-pong](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5) - 130 行 NumPy 策略梯度智能体玩 ATARI Pong，《Pong from Pixels》一文的代码配套。
+### 视觉 / 图像描述
+- ⭐ [karpathy/neuraltalk](https://github.com/karpathy/neuraltalk) - Python + NumPy 多模态 RNN，用句子描述图片内容（★5.5K）。斯坦福李飞飞门下博士研究。
+- ⭐ [karpathy/neuraltalk2](https://github.com/karpathy/neuraltalk2) - 高效 Torch/GPU 重写；支持批量推理、beam search、CNN 编码器（★5.6K）。
+### 研究工具
+- ⭐ [karpathy/arxiv-sanity-preserver](https://github.com/karpathy/arxiv-sanity-preserver) - arXiv 论文浏览/搜索/筛选的 Web 界面（★5.6K）。
+- ⭐ [karpathy/arxiv-sanity-lite](https://github.com/karpathy/arxiv-sanity-lite) - 轻量级继承者：标记感兴趣的论文，获取 SVM/tfidf 推荐（★1.5K）。
 ---
 
 ## 概念与宣言
@@ -246,6 +261,14 @@
 - [mlitb/pong](https://github.com/mlitb/pong) - DQN / DDQN 三人小组学生复现。
 - [shehio/Karpathy-Pong](https://github.com/shehio/Karpathy-Pong) - 「一次只跑一种算法」的复现 + 衍生。
 - 📖 [Ian McKenzie — Pong from pixels without reading "Pong from Pixels"](https://www.lesswrong.com/posts/ipxmEgNeqFkjJAmx3) - LessWrong 文章，作为对照直接照原 DeepMind DQN 论文实现。
+### char-rnn 移植与复现
+> 思想种子：⭐ [karpathy/char-rnn](https://github.com/karpathy/char-rnn)（★14K，3.5K+ fork）+ 📖 [The Unreasonable Effectiveness of RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)（2015）。原始 Torch/Lua 仓库催生了几乎所有主流框架的移植；以下均明确署名 Karpathy。
+- 🌟 [sherjilozair/char-rnn-tensorflow](https://github.com/sherjilozair/char-rnn-tensorflow) - TensorFlow 多层 LSTM/RNN 字符级语言模型；README 明确标注 "Inspired from Andrej Karpathy's char-rnn"（★4K+）。
+- [spro/char-rnn.pytorch](https://github.com/spro/char-rnn.pytorch) - Practical PyTorch 系列中的 PyTorch 移植。
+- [nikhilbarhate99/Char-RNN-PyTorch](https://github.com/nikhilbarhate99/Char-RNN-PyTorch) - 极简 PyTorch 字符级语言建模。
+- [yusuketomoto/chainer-char-rnn](https://github.com/yusuketomoto/chainer-char-rnn) - Chainer 框架移植。
+- [crazydonkey200/tensorflow-char-rnn](https://github.com/crazydonkey200/tensorflow-char-rnn) - 使用现代 API 的另一种 TensorFlow 实现。
+- [ekzhang/char-rnn-keras](https://github.com/ekzhang/char-rnn-keras) - Keras/TensorFlow 移植，附带 Web 演示。
 ### nn-zero-to-hero 配套教材
 > 思想种子：⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero)（★20.3K）+ 🎓 [Zero-to-Hero 系列](http://karpathy.ai/zero-to-hero.html)。
 **注释式课堂笔记**
@@ -316,11 +339,20 @@
 > 思想种子：⭐ [karpathy/reader3](https://github.com/karpathy/reader3)（★3.4K，456+ fork；「90% vibe-coded，目的就是演示如何用 LLM 读书」）。
 **独立重新实现**
 - [yongkangc/llmreader](https://github.com/yongkangc/llmreader) - 在 EPUB 之上加入 PDF 支持；以「LLMReader」为名重新包装。
+- [taylorren/ai-reader](https://github.com/taylorren/ai-reader) - 三栏布局、右键 AI 分析、高亮标注与 Markdown 导出。
+- [lsunay/reader3-docker](https://github.com/lsunay/reader3-docker) - Docker 化 reader3 + cllama 浏览器扩展，一键部署。
 **原仓库上的 PR（正统 fork）**
 - [sharathdoes/reader3](https://github.com/sharathdoes) - ChatGroq LLM 聊天集成 + HTML UI（[PR](https://github.com/karpathy/reader3/pulls)）。
 - [jerithlawrence/reader3](https://github.com/jerithlawrence) - 段落 / 章节 / 整章复制按钮。
 - [HenokB/reader3](https://github.com/HenokB) - 上下方向键翻页。
 - [andrestobelem/reader3](https://github.com/andrestobelem) - 西班牙语翻译 + TAR。
+### NeuralTalk / 图像描述
+> 思想种子：⭐ [karpathy/neuraltalk](https://github.com/karpathy/neuraltalk) + ⭐ [karpathy/neuraltalk2](https://github.com/karpathy/neuraltalk2)。MS-COCO 的 "Karpathy split" 成为图像描述研究的 de-facto 标准 train/val/test 划分。
+- 🌟 [ruotianluo/ImageCaptioning.pytorch](https://github.com/ruotianluo/ImageCaptioning.pytorch) - PyTorch 图像描述标准代码库；自批评训练、bottom-up 特征、Transformer（★2K+）。
+- [sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning) - 教程式 PyTorch 图像描述，详细讲解；使用 Karpathy split（★2K+）。
+- [yiyang92/neuraltalk2-tensorflow](https://github.com/yiyang92/neuraltalk2-tensorflow) - TensorFlow VGG16-LSTM 图像描述；明确标注受 neuraltalk2 启发。
+- [raoyongming/neuraltalk2.pytorch](https://github.com/raoyongming/neuraltalk2.pytorch) - PyTorch neuraltalk2 移植，集成 ResNet。
+- [ccc-js/convnetjs2](https://github.com/ccc-js/convnetjs2) - ConvNetJS 继任者，维护浏览器端 JS 深度学习并支持 npm。
 ### 多语言移植
 > 思想种子：⭐ [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) · ⭐ [minbpe](https://github.com/karpathy/minbpe) · ⭐ [llm.c](https://github.com/karpathy/llm.c) · ⭐ [llama2.c](https://github.com/karpathy/llama2.c)。
 **microgpt 移植**
@@ -411,14 +443,13 @@
 - 🪧 [`HELLO.md` gist](https://gist.github.com/karpathy/)（2026/04/21）- "Agent free time" 概念（27★ / 3 forks）。尚无成熟衍生，但讨论热烈。
 - [ranton256/microgpt_jl](https://github.com/ranton256/microgpt_jl) - [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) 的 Julia 移植。
 - 📖 [Deep Neural Nets: 33 years ago](http://karpathy.github.io/2022/03/14/lecun1989/)（2022/03）→ [teaching-on-testbeds/deep-nets-reproducing](https://github.com/teaching-on-testbeds/deep-nets-reproducing) - LeCun 1989 的课堂复现，以及 Chameleon Cloud Trovi 可复现制品。
+- ⭐ [karpathy/cryptos](https://github.com/karpathy/cryptos) - 纯 Python 零依赖从零实现比特币，教学用途（★1.9K）。
+- ⭐ [karpathy/rendergit](https://github.com/karpathy/rendergit) - 将任意 git 仓库渲染为单个静态 HTML 页面，面向人类或 LLM（★2.2K）。
+- ⭐ [karpathy/lecun1989-repro](https://github.com/karpathy/lecun1989-repro) - 复现 LeCun 1989 反向传播论文；"Deep Neural Nets: 33 years ago" 博文的配套代码（★760）。
 ### 概念引文层
 > Karpathy 思想碎片，大多以 README 内引用形式存在，而非衍生出独立子派系。列于此处，以便贡献者不必寻找缺失的子章节。
 - 🪧 [The Space of Minds](https://x.com/karpathy)（2025/11/29）- 在 skills/wiki README 中被引用。
-- 🪧 Animals vs Ghosts（[Dwarkesh Podcast 2025/10](https://www.dwarkeshpatel.com/)）- 在 agentic-engineering README 中被引用。
-- 🪧 Verifiability 推文 - 被 [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills) 逐字引用。
 - 🪧 [LLM GUI / Generative UI 推文](https://x.com/karpathy/status/1917920257)（2025/04）- 后来被 Google DeepMind 的 Gemini 3 生成式 UI 工作呼应；尚无专属 OSS 派系。
-- 📖 Power to the people（2025/04）- 评论密集型种子；无代码项目。
-- 📖 2025 LLM Year in Review - 锚点文章；被广泛引用。
 - 📄 [arXiv:2601.07573 — A Model of Artificial Jagged Intelligence](https://arxiv.org/abs/2601.07573) - "锯齿状智能"的学术操作化。
 
 ## 演讲与文章
@@ -430,13 +461,25 @@
 - 📺 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)（2025，3.5h） - 面向大众的 LLM 深度解析；无需编程经验。
 - 📺 [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)（2024） - minbpe 配套讲座。
 - 📺 [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU)（2024，4h） - llm.c 配套讲座。
+- 📺 [From Vibe Coding to Agentic Engineering](https://www.youtube.com/watch?v=96jN2OCOfLs)（Sequoia AI Ascent 2026/04） - 炉边谈话，将 "agentic engineering" 定义为 vibe coding 的纪律化姐妹篇。
 ### 博客文章
 - 📖 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)（2015）
 - 📖 [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/)（2016）
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)（2017）
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/)（2019）
+- 📖 [I Love Calculator](https://karpathy.ai/blog/calculator.html)（2024/09） - 对技术之美的哲学反思；零依赖、有效用的信息处理。
+- 📖 [Power to the People](https://karpathy.bearblog.dev/power-to-the-people/)（2025/04） - LLM 如何独特地逆转了传统技术扩散模式。
 - 📖 [Vibe Coding MenuGen](https://karpathy.bearblog.dev/vibe-coding-menugen/)（2025）
+- 📖 [Digital Hygiene](https://karpathy.bearblog.dev/digital-hygiene/)（2025/03） - 在线安全与隐私的偏执指南。
+- 📖 [Verifiability](https://karpathy.bearblog.dev/verifiability/)（2025/11） - AI 时代的组织原则：重置、重复、评分。
+- 📖 [The Space of Minds](https://karpathy.bearblog.dev/the-space-of-minds/)（2025/11） - 动物智能只是广阔智能景观中的一个点。
+- 📖 [Animals vs Ghosts](https://karpathy.bearblog.dev/animals-vs-ghosts/)（2025/10） - 「我们在召唤幽灵，而非构建动物」——对比稳健的生物智能与参差的 AI。
+- 📖 [Auto-grading decade-old HN](https://karpathy.bearblog.dev/auto-grade-hn/)（2025/12） - LLM 评审团用后见之明给旧预测打分；hn-time-capsule 配套。
+- 📖 [Chemical Hygiene](https://karpathy.bearblog.dev/chemical-hygiene/)（2025/12） - 在"极限榨价"行业中保护健康的偏执指南。
 - 📖 [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)（2025） - 重塑 LLM 发展的六大范式转变。
+### 播客与访谈
+- 📺 [Dwarkesh Podcast — "AGI 还需十年"](https://www.dwarkesh.com/p/andrej-karpathy)（2025/10） - 关于 RL、AGI 时间线、模型坍缩的深度对话。
+- 📺 [No Priors — "代码智能体、AutoResearch 与 AI 的循环时代"](https://www.youtube.com/watch?v=kwSVtQ7dziU)（2025/03） - 多智能体工作流、"循环时代"、人类成为瓶颈。
 ### 关键推文
 - 🪧 [LLM OS](https://x.com/karpathy/status/1723140519554105733)（2023/11）
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383)（2025/02）
@@ -446,30 +489,41 @@
 ## 时间线 2015 → 2026
 | 日期 | 事件 | 谱系 |
 |---|---|---|
+| 2015/05 | neuraltalk 发布 | 图像描述 |
 | 2015/05 | The Unreasonable Effectiveness of RNNs | char-rnn |
 | 2015/12 | min-char-rnn gist | char-rnn |
 | 2016/05 | Pong from Pixels 一文 + pg-pong gist | RL 入门 |
+| 2016/06 | neuraltalk2 发布（Torch/GPU） | 图像描述 |
 | 2017/11 | Software 2.0 一文 | 世界观 |
 | 2019/04 | A Recipe for Training NN | 训练 SOP |
 | 2020/08 | minGPT 发布 | GPT 极简 |
 | 2022/12 | nanoGPT 发布 | GPT 极简 |
 | 2023/02 | Zero-to-Hero 第 1 课（micrograd） | 教育 |
+| 2023/06 | LLM101n "Let's build a Storyteller" 课程 | 教育 |
 | 2023/04 | llama2.c 发布 | 单文件推理 |
 | 2023/11 | Intro to LLMs + LLM OS 推 | LLM OS |
 | 2024/02 | minbpe + Tokenizer 视频 | 分词器 |
 | 2024/04 | llm.c 公开 | 反 PyTorch 必然性 |
 | 2024/06 | 复现 GPT-2 (124M) 4h 视频 | llm.c |
 | 2024/07 | Eureka Labs 创办 | AI 原生学校 |
+| 2024/09 | "I Love Calculator" 博文 | 哲学 |
 | 2025/02 | Vibe coding 推 + MenuGen | Vibe Coding |
+| 2025/03 | No Priors 播客 — AI 的循环时代 | 播客 |
+| 2025/04 | Power to the People 博文 | 技术扩散 |
 | 2025/06 | YC 「Software is Changing (Again)」演讲 | Software 3.0 |
 | 2025/01 | Deep Dive into LLMs like ChatGPT 视频 | 教育 |
+| 2025/10 | Dwarkesh 播客 — AGI 时间线 | 播客 |
 | 2025/10 | nanochat 发布 | 全栈 ChatGPT |
+| 2025/11 | Verifiability + Space of Minds 博文 | 世界观 |
+| 2025/12 | Animals vs Ghosts 博文 | 世界观 |
+| 2025/12 | Auto-grading HN + hn-time-capsule | HN 时间胶囊 |
 | 2025/12 | 2025 LLM Year in Review 博文 | 反思 |
 | 2025/12 | 「Never been more behind」反思推 | Agentic Engineering 准备 |
 | 2026/01 | Agentic engineering / `CLAUDE.md` 系列 | `CLAUDE.md` |
 | 2026/03 | autoresearch + microgpt gist | AutoResearch |
 | 2026/04 | LLM Wiki gist + KarpathyTalk + reader3 | LLM Wiki / 阅读 agent |
 | 2026/04 | llm-council 发布 | 多模型协作 |
+| 2026/04 | Sequoia AI Ascent — Agentic Engineering 演讲 | Agentic Engineering |
 ---
 
 ## 相关 Awesome Lists

@@ -27,6 +27,8 @@
   - [RNN era](#rnn-era)
   - [Browser-side deep learning](#browser-side-deep-learning)
   - [Reinforcement learning intro](#reinforcement-learning-intro)
+  - [Vision / Image Captioning](#vision--image-captioning)
+  - [Research tools](#research-tools)
 - [Concepts & Manifestos](#concepts--manifestos)
 - [Community Implementations](#community-implementations)
   - [LLM Wiki](#llm-wiki)
@@ -37,10 +39,12 @@
   - [LLM OS](#llm-os)
   - [Vibe Coding](#vibe-coding)
   - [Pong from Pixels reproductions](#pong-from-pixels-reproductions)
+  - [char-rnn ports & reproductions](#char-rnn-ports--reproductions)
   - [nn-zero-to-hero workbooks](#nn-zero-to-hero-workbooks)
   - [nanochat reproductions](#nanochat-reproductions)
   - [LLM Council forks](#llm-council-forks)
   - [reader3 forks](#reader3-forks)
+  - [NeuralTalk / Image Captioning](#neuraltalk--image-captioning)
   - [Multi-language ports (microgpt / minbpe / llm.c / llama2.c)](#multi-language-ports)
   - [GPT minimal derivatives & cross-modal](#gpt-minimal-derivatives-cross-modal)
   - [Graphify / Raw-folder-first](#graphify-raw-folder-first)
@@ -70,6 +74,9 @@
 - ⭐ [karpathy/micrograd](https://github.com/karpathy/micrograd) - ~100 lines of autograd + ~50 lines of NN with a PyTorch-like API. Companion to Zero-to-Hero lecture 1.
 - ⭐ [karpathy/makemore](https://github.com/karpathy/makemore) - Character-level language model that walks bigram → MLP → RNN → Transformer in 5 stages.
 - ⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) - The canonical Zero-to-Hero notebook bundle covering every lecture.
+- ⭐ [karpathy/LLM101n](https://github.com/karpathy/LLM101n) - "Let's build a Storyteller" full course building an LLM from scratch; precursor to Eureka Labs (★37K).
+- ⭐ [karpathy/build-nanogpt](https://github.com/karpathy/build-nanogpt) - Video+code companion to the "Let's build GPT: from scratch, in code, spelled out" lecture (★4.9K).
+- ⭐ [karpathy/ng-video-lecture](https://github.com/karpathy/ng-video-lecture) - Code from the Zero-to-Hero nanoGPT lecture video (★4.6K).
 ### Minimal GPT implementations
 - ⭐ [karpathy/minGPT](https://github.com/karpathy/minGPT) - ~300-line PyTorch GPT with a teaching-grade addition demo (99.9% accuracy).
 - ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) - The simplest, fastest repo for training/finetuning medium-sized GPTs (★57K+).
@@ -86,14 +93,22 @@
 - ⭐ [karpathy/llama2.c](https://github.com/karpathy/llama2.c) - Single-file C inference for Llama 2, plus PyTorch training scripts. The Karpathy repo with **the most multi-language ports**.
 ### Tokenizer from scratch
 - ⭐ [karpathy/minbpe](https://github.com/karpathy/minbpe) - Three-tier teaching implementation (Basic / Regex / GPT4 tokenizers) paired with the *Let's build the GPT Tokenizer* video.
+- ⭐ [karpathy/rustbpe](https://github.com/karpathy/rustbpe) - "The missing tiktoken training code"; Karpathy's own Rust BPE extension (★454).
 ### RNN era
 - ⭐ [karpathy/char-rnn](https://github.com/karpathy/char-rnn) - The Torch/Lua multi-layer RNN/LSTM/GRU char-level LM that powered the *Unreasonable Effectiveness of RNNs* essay.
 - ⭐ [karpathy/min-char-rnn](https://gist.github.com/karpathy/d4dee566867f8291f086) - Vanilla RNN in 100 lines of pure NumPy (★4K+).
 ### Browser-side deep learning
 - ⭐ [karpathy/convnetjs](https://github.com/karpathy/convnetjs) - JS CNN/RL training library; for many learners this was the first place backprop was *visible*.
 - ⭐ [karpathy/reinforcejs](https://github.com/karpathy/reinforcejs) - JS implementations of DP / SARSA / Q-learning / DQN / Policy Gradient with web demos.
+- ⭐ [karpathy/recurrentjs](https://github.com/karpathy/recurrentjs) - Deep RNNs and LSTMs in JavaScript with automatic differentiation (★981).
 ### Reinforcement learning intro
 - ⭐ [karpathy/pg-pong](https://gist.github.com/karpathy/a4166c7fe253700972fcbc77e4ea32c5) - 130-line NumPy policy-gradient agent for ATARI Pong. Companion to the *Pong from Pixels* essay.
+### Vision / Image Captioning
+- ⭐ [karpathy/neuraltalk](https://github.com/karpathy/neuraltalk) - Python+NumPy multimodal RNN that describes images with sentences (★5.5K). Stanford PhD work with Fei-Fei Li.
+- ⭐ [karpathy/neuraltalk2](https://github.com/karpathy/neuraltalk2) - Efficient Torch/GPU rewrite; batched inference, beam search, CNN encoders (★5.6K).
+### Research tools
+- ⭐ [karpathy/arxiv-sanity-preserver](https://github.com/karpathy/arxiv-sanity-preserver) - Web interface for browsing, searching, and filtering recent arXiv submissions (★5.6K).
+- ⭐ [karpathy/arxiv-sanity-lite](https://github.com/karpathy/arxiv-sanity-lite) - Lightweight successor: tag papers of interest, get SVM/tfidf recommendations (★1.5K).
 ---
 
 ## Concepts & Manifestos
@@ -245,6 +260,14 @@
 - [mlitb/pong](https://github.com/mlitb/pong) - DQN / DDQN three-person student reproduction.
 - [shehio/Karpathy-Pong](https://github.com/shehio/Karpathy-Pong) - "One algorithm at a time" reproduction with derivatives.
 - 📖 [Ian McKenzie — Pong from pixels without reading "Pong from Pixels"](https://www.lesswrong.com/posts/ipxmEgNeqFkjJAmx3) - LessWrong post implementing DQN from the original DeepMind paper as a comparison.
+### char-rnn ports & reproductions
+> Seed: ⭐ [karpathy/char-rnn](https://github.com/karpathy/char-rnn) (★14K, 3.5K+ forks) + 📖 [The Unreasonable Effectiveness of RNNs](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) (2015). The Torch/Lua original spawned ports to every major framework; listed below are those with explicit Karpathy attribution.
+- 🌟 [sherjilozair/char-rnn-tensorflow](https://github.com/sherjilozair/char-rnn-tensorflow) - Multi-layer LSTM/RNN char-level LM in TensorFlow; explicitly "Inspired from Andrej Karpathy's char-rnn" (★4K+).
+- [spro/char-rnn.pytorch](https://github.com/spro/char-rnn.pytorch) - PyTorch port from the Practical PyTorch series.
+- [nikhilbarhate99/Char-RNN-PyTorch](https://github.com/nikhilbarhate99/Char-RNN-PyTorch) - Minimalist character-level language modeling in PyTorch.
+- [yusuketomoto/chainer-char-rnn](https://github.com/yusuketomoto/chainer-char-rnn) - Chainer port of char-rnn.
+- [crazydonkey200/tensorflow-char-rnn](https://github.com/crazydonkey200/tensorflow-char-rnn) - Alternative TensorFlow implementation with modern API.
+- [ekzhang/char-rnn-keras](https://github.com/ekzhang/char-rnn-keras) - Keras/TensorFlow port with web demo.
 ### nn-zero-to-hero workbooks
 > Seed: ⭐ [karpathy/nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero) (★20.3K) + 🎓 [Zero-to-Hero series](http://karpathy.ai/zero-to-hero.html).
 **Annotated lecture notes**
@@ -315,11 +338,20 @@
 > Seed: ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) (★3.4K, 456+ forks; "90% vibe-coded just to illustrate how to read books with LLMs").
 **Standalone re-implementations**
 - [yongkangc/llmreader](https://github.com/yongkangc/llmreader) - Adds PDF support on top of EPUB; reframes as "LLMReader" with quote-driven landing.
+- [taylorren/ai-reader](https://github.com/taylorren/ai-reader) - Three-column layout, right-click AI analysis, highlights, and markdown export.
+- [lsunay/reader3-docker](https://github.com/lsunay/reader3-docker) - Dockerized reader3 with cllama browser extension for streamlined deployment.
 **Pull requests on the original repo (canonical forks)**
 - [sharathdoes/reader3](https://github.com/sharathdoes) - ChatGroq LLM chat integration + HTML UI ([PR](https://github.com/karpathy/reader3/pulls)).
 - [jerithlawrence/reader3](https://github.com/jerithlawrence) - Text-copy buttons (paragraph / section / chapter).
 - [HenokB/reader3](https://github.com/HenokB) - Keyboard arrow keys for prev/next.
 - [andrestobelem/reader3](https://github.com/andrestobelem) - Spanish translation + TAR.
+### NeuralTalk / Image Captioning
+> Seeds: ⭐ [karpathy/neuraltalk](https://github.com/karpathy/neuraltalk) + ⭐ [karpathy/neuraltalk2](https://github.com/karpathy/neuraltalk2). The "Karpathy split" of MS-COCO became the de-facto standard train/val/test split for image captioning research.
+- 🌟 [ruotianluo/ImageCaptioning.pytorch](https://github.com/ruotianluo/ImageCaptioning.pytorch) - Standard PyTorch image captioning codebase; self-critical training, bottom-up features, transformers (★2K+).
+- [sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning) - Tutorial-style PyTorch image captioning with detailed explanations; uses Karpathy's splits (★2K+).
+- [yiyang92/neuraltalk2-tensorflow](https://github.com/yiyang92/neuraltalk2-tensorflow) - TensorFlow VGG16-LSTM image captioning; explicitly inspired by neuraltalk2.
+- [raoyongming/neuraltalk2.pytorch](https://github.com/raoyongming/neuraltalk2.pytorch) - PyTorch neuraltalk2 port with ResNet integrated into training.
+- [ccc-js/convnetjs2](https://github.com/ccc-js/convnetjs2) - Successor to ConvNetJS maintaining browser-based JS deep learning with npm support.
 ### Multi-language ports
 > Seeds: ⭐ [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) · ⭐ [minbpe](https://github.com/karpathy/minbpe) · ⭐ [llm.c](https://github.com/karpathy/llm.c) · ⭐ [llama2.c](https://github.com/karpathy/llama2.c).
 **microgpt ports**
@@ -409,14 +441,12 @@
 - 🪧 [`HELLO.md` gist](https://gist.github.com/karpathy/) (2026/04/21) - "Agent free time" concept (27★ / 3 forks). No mature derivatives yet, but heavy discussion.
 - [ranton256/microgpt_jl](https://github.com/ranton256/microgpt_jl) - Julia port of the [microgpt gist](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95).
 - 📖 [Deep Neural Nets: 33 years ago](http://karpathy.github.io/2022/03/14/lecun1989/) (2022/03) → [teaching-on-testbeds/deep-nets-reproducing](https://github.com/teaching-on-testbeds/deep-nets-reproducing) - Classroom reproduction of LeCun 1989, plus Chameleon Cloud Trovi reproducible artifact.
+- ⭐ [karpathy/cryptos](https://github.com/karpathy/cryptos) - Pure Python from-scratch zero-dependency Bitcoin implementation for educational purposes (★1.9K).
+- ⭐ [karpathy/rendergit](https://github.com/karpathy/rendergit) - Render any git repo into a single static HTML page for humans or LLMs (★2.2K).
+- ⭐ [karpathy/lecun1989-repro](https://github.com/karpathy/lecun1989-repro) - Reproducing LeCun 1989 backprop paper; companion to the "Deep Neural Nets: 33 years ago" blog post (★760).
 ### Concept citations layer
 > Karpathy thought-pieces that mostly live as in-README citations rather than spawning their own sub-lineage. Listed here so contributors don't go looking for a missing subsection.
-- 🪧 [The Space of Minds](https://x.com/karpathy) (2025/11/29) - Referenced in skills/wiki READMEs.
-- 🪧 Animals vs Ghosts ([Dwarkesh Podcast 2025/10](https://www.dwarkeshpatel.com/)) - Referenced in agentic-engineering READMEs.
-- 🪧 Verifiability tweet - Cited verbatim by [forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills).
 - 🪧 [LLM GUI / Generative UI tweet](https://x.com/karpathy/status/1917920257) (2025/04) - Later echoed by Google DeepMind's Gemini 3 generative UI work; no dedicated OSS faction yet.
-- 📖 Power to the people (2025/04) - Commentary-heavy seed; no code projects.
-- 📖 2025 LLM Year in Review - Anchor essay; widely cited.
 - 📄 [arXiv:2601.07573 — A Model of Artificial Jagged Intelligence](https://arxiv.org/abs/2601.07573) - Academic operationalization of "jagged intelligence".
 ---
 
@@ -429,13 +459,25 @@
 - 📺 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) (2025, 3.5h) - General-audience deep dive; no programming experience required.
 - 📺 [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) (2024) - Companion to minbpe.
 - 📺 [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU) (2024, 4h) - Companion to llm.c.
+- 📺 [From Vibe Coding to Agentic Engineering](https://www.youtube.com/watch?v=96jN2OCOfLs) (Sequoia AI Ascent 2026/04) - Fireside chat introducing "agentic engineering" as vibe coding's disciplined sibling.
 ### Blog posts
 - 📖 [The Unreasonable Effectiveness of Recurrent Neural Networks](http://karpathy.github.io/2015/05/21/rnn-effectiveness/) (2015)
 - 📖 [Deep Reinforcement Learning: Pong from Pixels](http://karpathy.github.io/2016/05/31/rl/) (2016)
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) (2017)
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/) (2019)
-- 📖 [Vibe Coding MenuGen](https://karpathy.bearblog.dev/vibe-coding-menugen/) (2025)
+- 📖 [I Love Calculator](https://karpathy.ai/blog/calculator.html) (2024/09) - Philosophical reflection on beauty in technology; dependency-free, utility-bearing information processing.
+- 📖 [Power to the People: How LLMs Flip the Script on Technology Diffusion](https://karpathy.bearblog.dev/power-to-the-people/) (2025/04) - LLMs uniquely reverse the traditional technology diffusion pattern.
+- 📖 [Vibe Coding MenuGen](https://karpathy.bearblog.dev/vibe-coding-menugen/) (2025/02)
+- 📖 [Digital Hygiene](https://karpathy.bearblog.dev/digital-hygiene/) (2025/03) - Opinionated guide to online security and privacy.
+- 📖 [Verifiability](https://karpathy.bearblog.dev/verifiability/) (2025/11) - The organizing principle of the AI era: reset, repeat, score.
+- 📖 [The Space of Minds](https://karpathy.bearblog.dev/the-space-of-minds/) (2025/11) - Animal intelligence is one point in a vast landscape; LLMs are new and different points.
+- 📖 [Animals vs Ghosts](https://karpathy.bearblog.dev/animals-vs-ghosts/) (2025/10) - "We're summoning ghosts, not building animals" — contrasting robust biological vs jagged AI intelligence.
+- 📖 [Auto-grading decade-old Hacker News discussions with hindsight](https://karpathy.bearblog.dev/auto-grade-hn/) (2025/12) - LLM-jury retrospective on old predictions; companion to hn-time-capsule.
+- 📖 [Chemical Hygiene](https://karpathy.bearblog.dev/chemical-hygiene/) (2025/12) - Opinionated guide to health in a "pricemaxxing" industry.
 - 📖 [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/) (2025) - Six paradigm shifts that reshaped LLM development.
+### Podcasts & interviews
+- 📺 [Dwarkesh Podcast — "AGI is Still a Decade Away"](https://www.dwarkesh.com/p/andrej-karpathy) (2025/10) - Deep-dive on RL, AGI timelines, model collapse, and why 2025 is not truly "the year of agents."
+- 📺 [No Priors — "Code Agents, AutoResearch, and the Loopy Era of AI"](https://www.youtube.com/watch?v=kwSVtQ7dziU) (2025/03) - Multi-agent workflows, the "Loopy Era," and humans as the bottleneck.
 ### Key tweets
 - 🪧 [LLM OS](https://x.com/karpathy/status/1723140519554105733) (2023/11)
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383) (2025/02)
@@ -445,30 +487,41 @@
 ## Timeline 2015 → 2026
 | Date | Event | Lineage |
 |---|---|---|
+| 2015/05 | neuraltalk released | image captioning |
 | 2015/05 | The Unreasonable Effectiveness of RNNs | char-rnn |
 | 2015/12 | min-char-rnn gist | char-rnn |
 | 2016/05 | Pong from Pixels essay + pg-pong gist | RL intro |
+| 2016/06 | neuraltalk2 released (Torch/GPU) | image captioning |
 | 2017/11 | Software 2.0 essay | worldview |
 | 2019/04 | A Recipe for Training NN | training SOP |
 | 2020/08 | minGPT released | GPT minimal |
 | 2022/12 | nanoGPT released | GPT minimal |
 | 2023/02 | Zero-to-Hero lecture 1 (micrograd) | education |
+| 2023/06 | LLM101n "Let's build a Storyteller" course | education |
 | 2023/04 | llama2.c released | single-file inference |
 | 2023/11 | Intro to LLMs + LLM OS tweet | LLM OS |
 | 2024/02 | minbpe + Tokenizer video | tokenizer |
 | 2024/04 | llm.c public | anti-PyTorch-necessity |
 | 2024/06 | Reproduce GPT-2 (124M) 4h video | llm.c |
 | 2024/07 | Eureka Labs founded | AI-native school |
+| 2024/09 | "I Love Calculator" blog post | philosophy |
 | 2025/02 | Vibe coding tweet + MenuGen | Vibe Coding |
+| 2025/03 | No Priors podcast — Loopy Era of AI | podcast |
+| 2025/04 | Power to the People blog post | diffusion |
 | 2025/06 | YC "Software is Changing (Again)" talk | Software 3.0 |
 | 2025/01 | Deep Dive into LLMs like ChatGPT video | education |
+| 2025/10 | Dwarkesh Podcast — AGI timelines | podcast |
 | 2025/10 | nanochat released | full-stack ChatGPT |
+| 2025/11 | Verifiability + Space of Minds essays | worldview |
+| 2025/12 | Animals vs Ghosts essay | worldview |
+| 2025/12 | Auto-grading HN + hn-time-capsule | HN time capsule |
 | 2025/12 | 2025 LLM Year in Review blog post | reflection |
 | 2025/12 | "Never been more behind" reflection tweet | Agentic Engineering setup |
 | 2026/01 | Agentic engineering / `CLAUDE.md` series | `CLAUDE.md` |
 | 2026/03 | autoresearch + microgpt gist | AutoResearch |
 | 2026/04 | LLM Wiki gist + KarpathyTalk + reader3 | LLM Wiki / reading agent |
 | 2026/04 | llm-council released | multi-model collaboration |
+| 2026/04 | Sequoia AI Ascent — Agentic Engineering talk | agentic engineering |
 ---
 
 ## Related Awesome Lists
