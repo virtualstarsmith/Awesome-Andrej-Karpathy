@@ -76,7 +76,7 @@
 ### Full-stack ChatGPT speedrun
 - ⭐ [karpathy/nanochat](https://github.com/karpathy/nanochat) - "The best ChatGPT \$100 can buy": single-node full-stack training + chat UI in ~8000 hand-written lines.
 - ⭐ [karpathy/microgpt](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) - 200-line dependency-free Python: dataset, tokenizer, autograd, GPT, Adam, train, infer.
-- ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) - 630-line single-GPU training core that lets an agent edit `program.md` and run 5-minute experiment loops.
+- ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) - 630-line single-GPU training core that lets an agent edit `program.md` and run 5-minute experiment loops (★66K+, 9.6K forks).
 - ⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council) - Multi-LLM "council": parallel answers, mutual scoring, Chairman LLM synthesizes the final reply.
 - ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) - EPUB chapter reader purpose-built for "reading books with an LLM". Hit 1.5K★ in 2 days.
 - ⭐ [karpathy/KarpathyTalk](https://github.com/karpathy/KarpathyTalk) (2026/04) - Experimental builders+agents shared platform built around the talks.
@@ -178,6 +178,7 @@
 **Frameworks & curations**
 - ⚙️ [VectorInstitute/helix](https://github.com/VectorInstitute/helix) + [helix-examples](https://github.com/VectorInstitute/helix-examples) - Vector Institute autoresearch framework with reproducible Karpathy + inference-TPS examples.
 - ⚙️ [agentsmd/](https://github.com/agentsmd/agents.md)`agents.md` - Open `AGENTS.md` standard (★21K) that the autoresearch ecosystem largely adopted.
+- 📚 [GitHub topic: karpathy-inspired](https://github.com/topics/karpathy-inspired) - Community topic collecting autoresearch-style autonomous improvement loops.
 - 📚 [WecoAI/awesome-autoresearch](https://github.com/WecoAI/awesome-autoresearch) - Early collection.
 - 📚 [alvinreal/awesome-autoresearch](https://github.com/alvinreal/awesome-autoresearch) - Mainstream awesome-list (★1.7K).
 - 📚 🇨🇳 [yibie/awesome-autoresearch](https://github.com/yibie/awesome-autoresearch) - Chinese curation.
@@ -185,6 +186,8 @@
 - ⚙️ [Red Hat OpenShift AI · autoresearch integration](https://www.redhat.com/en/blog) - 198-experiment showcase running the autoresearch loop on OpenShift AI.
 - 🎓 [Lightning AI · autoresearch tutorial track](https://lightning.ai/) - Tutorial-platform integration that walks through the full loop.
 - [revis · multi-agent autoresearch fork](https://www.reddit.com/r/LocalLLaMA/) - Reddit-discussed fork that adds multi-agent collaboration on top of the canonical loop.
+- Ascend/CANN fork - Huawei Ascend NPU adaptation ([Discussion #519](https://github.com/karpathy/autoresearch/issues/519)).
+- Colab/Kaggle T4 fork - Free T4 GPU port, zero cost and zero local setup ([Discussion #208](https://github.com/karpathy/autoresearch/issues/208)).
 ### NanoGPT speedrun
 > Seed: ⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) + ⭐ [llm.c](https://github.com/karpathy/llm.c) training baselines.
 - 🌟 [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) - 8×H100 training-time speedrun, currently **127.7s** (down from 8.2 min one year prior). Standard of this lineage.
@@ -254,6 +257,9 @@
 - [Anri-Lombard/makemore](https://github.com/Anri-Lombard/makemore) - Same author's makemore rewrite.
 - [shoestringinc/microgradr](https://github.com/shoestringinc/microgradr) - Rust rewrite of micrograd.
 - [shoestringinc/makemore-rs](https://github.com/shoestringinc/makemore-rs) - Rust rewrite of makemore.
+- [danielway/micrograd-rs](https://github.com/danielway/micrograd-rs) - Scalar-valued autograd engine in Rust.
+- [msminhas93/ferric-micrograd](https://github.com/msminhas93/ferric-micrograd) - Rust implementation supporting batched reverse-mode autodiff with full NN functionality.
+- [AlphaGit/alpha-micrograd-rust](https://github.com/AlphaGit/alpha-micrograd-rust) - Active Rust port (v0.4.0) with companion blog.
 - [kfish/micrograd-cpp-2023](https://github.com/kfish/micrograd-cpp-2023) - C++ port of micrograd, tracks the YouTube tutorial.
 - [kfish/makemore-cpp-2023](https://github.com/kfish/makemore-cpp-2023) - C++ port of makemore (ZTH lectures 2-5).
 - [turingcompl33t/makemore-and-friends](https://github.com/turingcompl33t/makemore-and-friends) - Companion micrograd + makemore demo notebooks.
@@ -274,6 +280,7 @@
 - [saranormous/supa-beginna-nanochat](https://github.com/karpathy/nanochat/discussions/677) - Pre-cloud laptop walkthrough so every stage is understood before renting a GPU.
 **Adjacent / faster minimal cores**
 - [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - ~10× speedup over microgpt (also listed under autoresearch).
+- [webml-community/nanochat-webgpu](https://huggingface.co/spaces/webml-community/nanochat-webgpu) - WebGPU port by Xenova; nanochat models run 100% locally in browser, no server.
 - [chrisjmccormick / Exploring Nanochat](https://github.com/KellerJordan/modded-nanogpt/discussions/206) - Cross-pollination notes between modded-nanogpt and nanochat code bases.
 ### LLM Council forks
 > Seed: ⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council) (★18.5K, 3.6K forks; 3-stage council: collect → anonymized peer rank → Chairman synth).
@@ -281,6 +288,8 @@
 - [am-will/llm-council](https://github.com/am-will/llm-council) - Multi-agent orchestration for Claude Code; OpenCode/Claude Code/Gemini-CLI/Codex agent kinds, judge-merge.
 - [hideki5123/multi-agent-council](https://github.com/hideki5123/multi-agent-council) - Claude + OpenAI + Gemini 3-round protocol (Independent → Cross Review → Chair Synthesis).
 - [Sentry01/AgentCouncil](https://github.com/Sentry01/AgentCouncil) - Collaborative/adversarial multi-agent on top of GitHub Copilot CLI.
+- [andrewvaughan/agent-council](https://github.com/andrewvaughan/agent-council) - 13 agent personas across 6 councils; SAST scanning + 4-member security/quality/testing/docs review.
+- [MrLesk/agents-council](https://github.com/MrLesk/agents-council) - Bridge across Claude Code, Codex, Gemini, and Cursor agent sessions.
 - [danielrosehill/LLM-Council-V3](https://github.com/danielrosehill/LLM-Council-V3) - Adds context-prompt separation and prompt actuation.
 - KobyStam *LLM Council Plus* - Modern UI + settings page + multi-API + web search + Ollama support ([video](https://www.youtube.com/watch?v=HOdyIyccOCE)).
 **Claude Code skills / plugins**
@@ -289,6 +298,11 @@
 - [Zandereins/hydra](https://github.com/topics/llm-council) - Multi-perspective code review council; 3 advisors / 10 agents in deep mode (Opus + Codex), evidence chains.
 - [valpere/chorus](https://github.com/topics/llm-council) - Cross-agent plugin for Claude Code / OpenCode / Gemini CLI / Codex (council, parallel review, debug patterns).
 - [looptroop-ai/LoopTroop](https://github.com/topics/llm-council) - LLM councils plan, Ralph loops recover, OpenCode worktrees ship.
+- [tenfoldmarc/llm-council-skill](https://github.com/tenfoldmarc/llm-council-skill) - 5 advisor roles as a Claude Code skill with anonymous peer review.
+- [gcpdev/llm-council-skill](https://github.com/gcpdev/llm-council-skill) - Collaborative brainstorming with ChatGPT and Gemini as a Claude Code skill.
+- [aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) - Teaches Claude to spin up 5 advisors to debate and deliver verdicts.
+- [shuntacurosu/llm_council_skill](https://github.com/shuntacurosu/llm_council_skill) - Orchestrating multiple LLMs with peer review and chairman synthesis.
+- [dair-ai/dair-academy-plugins](https://github.com/dair-ai/dair-academy-plugins) - LLM Council skill plugin powered by Fireworks AI multi-phase deliberation.
 **Variants & integrations**
 - [malik-builds/better-llm-council](https://github.com/malik-builds/better-llm-council) - Improved scoring pipeline.
 - [YonasValentin/llm-council](https://github.com/YonasValentin/llm-council) - Early fork with web UI.
@@ -296,6 +310,7 @@
 - [microsoft/hve-core](https://github.com/microsoft/hve-core/issues/1326) - Microsoft proposal to add an LLM Council orchestrator (GPT-5.4 / Opus 4.6 / Gemini 3.1 Pro).
 - [sherifkozman/the-llm-council](https://github.com/sherifkozman/the-llm-council) - Claude Code framework wrapping the 3-stage council pattern (collect → anonymized peer rank → Chairman synth).
 - [jacob-bd/llm-council-plus](https://github.com/jacob-bd/llm-council-plus) - Modern UI fork with multi-API + web search + Ollama support.
+- 📚 [danielrosehill/Awesome-LLM-Council-Projects](https://github.com/danielrosehill/Awesome-LLM-Council-Projects) - Curated list of multi-model deliberation systems.
 ### reader3 forks
 > Seed: ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) (★3.4K, 456+ forks; "90% vibe-coded just to illustrate how to read books with LLMs").
 **Standalone re-implementations**
@@ -326,6 +341,10 @@
 - [joshcarp/llm.go](https://github.com/joshcarp/llm.go) - Go port.
 - [Saimirbaci/llm.zig](https://github.com/Saimirbaci/llm.zig) - Zig port.
 - [rbitr/llm.f90](https://github.com/rbitr/llm.f90) - Fortran port.
+- [nietras/Llm.cs](https://github.com/nietras/Llm.cs) - C# port; auto-downloads from Hugging Face, clone-and-run on any platform.
+- [azret/llm.cs](https://github.com/azret/llm.cs) - C# port; CPU complete, CUDA in progress.
+- [otabuzzman/llm.java](https://github.com/otabuzzman/llm.java) - Java port with Stream parallelization and TornadoVM GPU acceleration.
+- [otabuzzman/llm.swift](https://github.com/otabuzzman/llm.swift) - Swift port of llm.c.
 **llama2.c ports** (the largest port family — Karpathy maintains a "notable forks" PR thread)
 - [`srush/llama2.rs`](https://github.com/srush/llama2.rs) - Rust port extended to 70B + 4-bit GPT-Q quantization, batched prefill, SIMD.
 - [`gaxler/llama2.rs`](https://github.com/gaxler/llama2.rs) - Alternative Rust port.
@@ -346,6 +365,7 @@
 - [mgrankin/minGPT](https://github.com/mgrankin/minGPT) - JAX port of minGPT.
 - [pytorch/examples · minGPT-ddp](https://github.com/pytorch/examples/blob/main/distributed/minGPT-ddp/mingpt/model.py) - Official PyTorch DDP teaching sample.
 - ⚙️ [Lightning-AI/lit-llama](https://github.com/Lightning-AI/lit-llama) - PyTorch Lightning team's training framework on top of nanoGPT.
+- [EleutherAI/nanoGPT-mup](https://github.com/EleutherAI/nanoGPT-mup) - nanoGPT fork incorporating Maximal Update Parameterization (μP) for scaling hyperparameters.
 - ⚙️ [stanford-crfm/levanter](https://github.com/stanford-crfm/levanter) - JAX-based large-model trainer with clear nanoGPT lineage.
 **MoE / sparse**
 - [wolfecameron/nanoMoE](https://github.com/wolfecameron/nanoMoE) - MoE layer + auxiliary losses + stability tricks added to nanoGPT ([blog](https://cameronrwolfe.substack.com/nano-moe)).
@@ -359,7 +379,7 @@
 - [EdIzaguirre/ChatGPT-from-Scratch](https://github.com/EdIzaguirre/ChatGPT-from-Scratch) - minGPT-driven walk through the original GPT papers.
 ### Graphify / Raw-folder-first
 > Seed: 🪧 [raw/ folder tweet](https://x.com/karpathy/status/2039805659) (2026/04) - Treat the LLM Wiki's input as a graph of raw files first; compile last. Anti-RAG taken one step further.
-- 🌟 [safishamsi/graphify](https://github.com/safishamsi/graphify) - Flagship graph-first compiler for raw markdown folders; **6K★ in 48h**.
+- 🌟 [safishamsi/graphify](https://github.com/safishamsi/graphify) - Flagship graph-first compiler for raw markdown folders; **~40K★ in 26 days, 450K+ downloads**.
 - [lucasrosati/claude-code-memory-setup](https://github.com/lucasrosati/claude-code-memory-setup) - Graph-based Claude Code memory layout; reports **71.5× token savings** on agent recall.
 - [amarodeabreu/claude-graph-memory](https://github.com/amarodeabreu/claude-graph-memory) - Claude-side graph memory store; minimal companion to graphify.
 - [memory-graph/memory-graph](https://github.com/memory-graph/memory-graph) - General-purpose memory-graph library reused by several forks.
@@ -369,6 +389,7 @@
 - 📚 [jordimas/awesome-agentic-engineering](https://github.com/jordimas/awesome-agentic-engineering) - Curated list of Agentic Engineering tools, talks, and case studies.
 - [software-mansion/agentic-engineering](https://github.com/software-mansion/agentic-engineering) - Production-grade Agentic Engineering scaffolding (skills + evals + safety).
 - 📚 [EthicalML/awesome-agentic-engineering-resources](https://github.com/EthicalML/awesome-agentic-engineering-resources) - Ethical-ML community curation.
+- [DimitriGeelen/agentic-engineering-framework](https://github.com/DimitriGeelen/agentic-engineering-framework) - Governance framework for AI coding agents; task traceability, structural gates, session continuity.
 - [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer scaffold (also cross-listed under [`CLAUDE.md` / Karpathy Skills](#claudemd--karpathy-skills)).
 ### HN Time Capsule
 > Seed: 📖 [Auto-grading decade-old HN](http://karpathy.github.io/) (2025/12/10) + ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule). LLM-jury retrospective on old predictions.
@@ -405,6 +426,7 @@
 - 📺 [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A) (Microsoft Build 2023) - GPT training pipeline panorama.
 - 📺 [Software is Changing (Again)](https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again) (YC AI Startup School 2025) - Software 3.0 thesis.
 - 📺 [Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY) (2023) - Companion to nanoGPT.
+- 📺 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI) (2025, 3.5h) - General-audience deep dive; no programming experience required.
 - 📺 [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE) (2024) - Companion to minbpe.
 - 📺 [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU) (2024, 4h) - Companion to llm.c.
 ### Blog posts
@@ -413,6 +435,7 @@
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35) (2017)
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/) (2019)
 - 📖 [Vibe Coding MenuGen](https://karpathy.bearblog.dev/vibe-coding-menugen/) (2025)
+- 📖 [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/) (2025) - Six paradigm shifts that reshaped LLM development.
 ### Key tweets
 - 🪧 [LLM OS](https://x.com/karpathy/status/1723140519554105733) (2023/11)
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383) (2025/02)
@@ -438,7 +461,9 @@
 | 2024/07 | Eureka Labs founded | AI-native school |
 | 2025/02 | Vibe coding tweet + MenuGen | Vibe Coding |
 | 2025/06 | YC "Software is Changing (Again)" talk | Software 3.0 |
+| 2025/01 | Deep Dive into LLMs like ChatGPT video | education |
 | 2025/10 | nanochat released | full-stack ChatGPT |
+| 2025/12 | 2025 LLM Year in Review blog post | reflection |
 | 2025/12 | "Never been more behind" reflection tweet | Agentic Engineering setup |
 | 2026/01 | Agentic engineering / `CLAUDE.md` series | `CLAUDE.md` |
 | 2026/03 | autoresearch + microgpt gist | AutoResearch |
@@ -480,7 +505,7 @@ Use the appropriate prefix emoji from the [Legend](#legend). Add 🇨🇳 for Ch
 ## Disclaimer
 > **Warning**: This is a **curated list, not an audit**. Listed projects are created and maintained by their respective authors. We do not audit, endorse, or guarantee the security, correctness, or licensing of any listed project.
 Community skills, agents, and `CLAUDE.md` files can contain prompt injections, tool poisoning, hidden payloads, or unsafe data-handling. Review every project (including its dependencies) yourself before installing or running it in a privileged environment.
-Stars, forks, license, and maintenance status drift quickly. The data here was last reconciled on **2026-05-09** and must be re-verified before publishing.
+Stars, forks, license, and maintenance status drift quickly. The data here was last reconciled on **2026-05-13** and must be re-verified before publishing.
 ---
 
 ## License

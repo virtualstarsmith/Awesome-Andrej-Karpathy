@@ -77,7 +77,7 @@
 ### 全栈 ChatGPT 速通
 - ⭐ [karpathy/nanochat](https://github.com/karpathy/nanochat) - 「\$100 能买到的最好 ChatGPT」：单机全栈训练 + 聊天 UI，约 8000 行手写代码。
 - ⭐ [karpathy/microgpt](https://gist.github.com/karpathy/8627fe009c40f57531cb18360106ce95) - 200 行零依赖纯 Python：数据集、分词器、自动求导、GPT、Adam、训练、推理一应俱全。
-- ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) - 630 行单 GPU 训练核心，让智能体自行编辑 `program.md` 并跑 5 分钟级实验闭环。
+- ⭐ [karpathy/autoresearch](https://github.com/karpathy/autoresearch) - 630 行单 GPU 训练核心，让智能体自行编辑 `program.md` 并跑 5 分钟级实验闭环（★66K+，9.6K fork）。
 - ⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council) - 多 LLM「议会」：并行回答、互相打分、由「主席 LLM」综合最终回复。
 - ⭐ [karpathy/reader3](https://github.com/karpathy/reader3) - 专为「让 LLM 陪你读书」打造的 EPUB 章节阅读器。两天破 1.5K★。
 - ⭐ [karpathy/KarpathyTalk](https://github.com/karpathy/KarpathyTalk)（2026/04） - 围绕演讲构建的「构建者 + 智能体共享平台」实验项目。
@@ -179,6 +179,7 @@
 **框架与精选**
 - ⚙️ [VectorInstitute/helix](https://github.com/VectorInstitute/helix) + [helix-examples](https://github.com/VectorInstitute/helix-examples) - Vector Institute 的 autoresearch 框架，附可复现的 Karpathy + 推理 TPS 示例。
 - ⚙️ [agentsmd/](https://github.com/agentsmd/agents.md)`agents.md` - 开源 `AGENTS.md` 标准（★21K），autoresearch 生态广泛采用。
+- 📚 [GitHub topic: karpathy-inspired](https://github.com/topics/karpathy-inspired) - 社区 topic，汇集 autoresearch 式自主改进循环。
 - 📚 [WecoAI/awesome-autoresearch](https://github.com/WecoAI/awesome-autoresearch) - 早期合集。
 - 📚 [alvinreal/awesome-autoresearch](https://github.com/alvinreal/awesome-autoresearch) - 主流 awesome-list（★1.7K）。
 - 📚 🇨🇳 [yibie/awesome-autoresearch](https://github.com/yibie/awesome-autoresearch) - 中文精选。
@@ -186,6 +187,8 @@
 - ⚙️ [Red Hat OpenShift AI · autoresearch 集成](https://www.redhat.com/en/blog) - 198 个实验示范，在 OpenShift AI 上跑 autoresearch 闭环。
 - 🎓 [Lightning AI · autoresearch 教程平台](https://lightning.ai/) - 把 autoresearch 全流程整合进 Lightning AI 教学。
 - [revis · 多 agent autoresearch fork](https://www.reddit.com/r/LocalLLaMA/) - Reddit 上讨论的多 agent 协作 fork。
+- Ascend/CANN fork - 华为昇腾 NPU 适配（[Discussion #519](https://github.com/karpathy/autoresearch/issues/519)）。
+- Colab/Kaggle T4 fork - 免费 T4 GPU 移植，零成本零本地环境（[Discussion #208](https://github.com/karpathy/autoresearch/issues/208)）。
 ### NanoGPT speedrun
 > 思想种子：⭐ [karpathy/nanoGPT](https://github.com/karpathy/nanoGPT) + ⭐ [llm.c](https://github.com/karpathy/llm.c) 训练基线。
 - 🌟 [KellerJordan/modded-nanogpt](https://github.com/KellerJordan/modded-nanogpt) - 8×H100 训练时长速通赛，目前 **127.7s**（一年前为 8.2 分钟）。本子派系的标准。
@@ -255,6 +258,9 @@
 - [Anri-Lombard/makemore](https://github.com/Anri-Lombard/makemore) - 同作者的 makemore 改写。
 - [shoestringinc/microgradr](https://github.com/shoestringinc/microgradr) - micrograd 的 Rust 改写。
 - [shoestringinc/makemore-rs](https://github.com/shoestringinc/makemore-rs) - makemore 的 Rust 改写。
+- [danielway/micrograd-rs](https://github.com/danielway/micrograd-rs) - Rust 标量自动求导引擎。
+- [msminhas93/ferric-micrograd](https://github.com/msminhas93/ferric-micrograd) - Rust 实现，支持批量反向模式自动求导与完整神经网络。
+- [AlphaGit/alpha-micrograd-rust](https://github.com/AlphaGit/alpha-micrograd-rust) - 活跃的 Rust 移植（v0.4.0），附带博客。
 - [kfish/micrograd-cpp-2023](https://github.com/kfish/micrograd-cpp-2023) - micrograd 的 C++ 移植，跟随 YouTube 教程节奏。
 - [kfish/makemore-cpp-2023](https://github.com/kfish/makemore-cpp-2023) - makemore 的 C++ 移植（ZTH 第 2-5 课）。
 - [turingcompl33t/makemore-and-friends](https://github.com/turingcompl33t/makemore-and-friends) - 配套 micrograd + makemore 演示 notebook。
@@ -275,6 +281,7 @@
 - [saranormous/supa-beginna-nanochat](https://github.com/karpathy/nanochat/discussions/677) - 在租 GPU 之前先把每个阶段在笔记本上跑一遍。
 **邻接 / 更快的极简核心**
 - [Entrpi/EEmicroGPT](https://github.com/Entrpi/EEmicroGPT) - 比 microgpt 快约 10×（也列于 autoresearch 一节）。
+- [webml-community/nanochat-webgpu](https://huggingface.co/spaces/webml-community/nanochat-webgpu) - Xenova 的 WebGPU 移植；nanochat 模型 100% 在浏览器本地运行，无需服务器。
 - [chrisjmccormick / Exploring Nanochat](https://github.com/KellerJordan/modded-nanogpt/discussions/206) - modded-nanogpt 与 nanochat 代码间的交叉笔记。
 ### LLM Council 衍生
 > 思想种子：⭐ [karpathy/llm-council](https://github.com/karpathy/llm-council)（★18.5K，3.6K fork；3 阶段议会：collect → 匿名互评 → Chairman 综合）。
@@ -282,6 +289,8 @@
 - [am-will/llm-council](https://github.com/am-will/llm-council) - 面向 Claude Code 的多 agent 编排；OpenCode/Claude Code/Gemini-CLI/Codex 多种 agent 类型 + judge-merge。
 - [hideki5123/multi-agent-council](https://github.com/hideki5123/multi-agent-council) - Claude + OpenAI + Gemini 三轮协议（Independent → Cross Review → Chair Synthesis）。
 - [Sentry01/AgentCouncil](https://github.com/Sentry01/AgentCouncil) - 在 GitHub Copilot CLI 之上的协作 / 对抗式多 agent。
+- [andrewvaughan/agent-council](https://github.com/andrewvaughan/agent-council) - 13 种 agent 人格横跨 6 个议会；SAST 扫描 + 安全/质量/测试/文档 4 人审议。
+- [MrLesk/agents-council](https://github.com/MrLesk/agents-council) - 跨 Claude Code、Codex、Gemini、Cursor 的 agent 会话桥接。
 - [danielrosehill/LLM-Council-V3](https://github.com/danielrosehill/LLM-Council-V3) - 加入「context-prompt」分离与 prompt 落地执行。
 - KobyStam *LLM Council Plus* - 现代 UI + 设置页 + 多 API + 网络搜索 + Ollama 支持（[视频](https://www.youtube.com/watch?v=HOdyIyccOCE)）。
 **Claude Code 技能 / 插件**
@@ -290,6 +299,11 @@
 - [Zandereins/hydra](https://github.com/topics/llm-council) - 多视角代码审议；深度模式 3 顾问 / 10 agent（Opus + Codex），证据链。
 - [valpere/chorus](https://github.com/topics/llm-council) - Claude Code / OpenCode / Gemini CLI / Codex 跨 agent 插件（议会、并行审议、调试模式）。
 - [looptroop-ai/LoopTroop](https://github.com/topics/llm-council) - LLM 议会做规划，Ralph 循环兜底，OpenCode worktree 出货。
+- [tenfoldmarc/llm-council-skill](https://github.com/tenfoldmarc/llm-council-skill) - 5 顾问角色 Claude Code skill，含匿名互评。
+- [gcpdev/llm-council-skill](https://github.com/gcpdev/llm-council-skill) - ChatGPT + Gemini 协作式头脑风暴 Claude Code skill。
+- [aiwithremy/claude-skills-llm-council](https://github.com/aiwithremy/claude-skills-llm-council) - 教 Claude 召集 5 顾问辩论并给出裁决。
+- [shuntacurosu/llm_council_skill](https://github.com/shuntacurosu/llm_council_skill) - 编排多 LLM 进行互评与主席综合。
+- [dair-ai/dair-academy-plugins](https://github.com/dair-ai/dair-academy-plugins) - 基于 Fireworks AI 多阶段审议的 LLM Council skill 插件。
 **变体与集成**
 - [malik-builds/better-llm-council](https://github.com/malik-builds/better-llm-council) - 改进的打分流水线。
 - [YonasValentin/llm-council](https://github.com/YonasValentin/llm-council) - 早期 fork 带 Web UI。
@@ -297,6 +311,7 @@
 - [microsoft/hve-core](https://github.com/microsoft/hve-core/issues/1326) - 微软提案：在 hve-core 中加入 LLM Council 编排器（GPT-5.4 / Opus 4.6 / Gemini 3.1 Pro）。
 - [sherifkozman/the-llm-council](https://github.com/sherifkozman/the-llm-council) - 把 3 阶段议会模式封装成 Claude Code 框架（collect → 匿名互评 → Chairman 综合）。
 - [jacob-bd/llm-council-plus](https://github.com/jacob-bd/llm-council-plus) - 现代 UI fork，支持多 API + 网络搜索 + Ollama。
+- 📚 [danielrosehill/Awesome-LLM-Council-Projects](https://github.com/danielrosehill/Awesome-LLM-Council-Projects) - 多模型审议系统精选列表。
 ### reader3 衍生
 > 思想种子：⭐ [karpathy/reader3](https://github.com/karpathy/reader3)（★3.4K，456+ fork；「90% vibe-coded，目的就是演示如何用 LLM 读书」）。
 **独立重新实现**
@@ -327,6 +342,10 @@
 - [joshcarp/llm.go](https://github.com/joshcarp/llm.go) - Go 移植。
 - [Saimirbaci/llm.zig](https://github.com/Saimirbaci/llm.zig) - Zig 移植。
 - [rbitr/llm.f90](https://github.com/rbitr/llm.f90) - Fortran 移植。
+- [nietras/Llm.cs](https://github.com/nietras/Llm.cs) - C# 移植；从 Hugging Face 自动下载，克隆即跑。
+- [azret/llm.cs](https://github.com/azret/llm.cs) - C# 移植；CPU 已完成，CUDA 开发中。
+- [otabuzzman/llm.java](https://github.com/otabuzzman/llm.java) - Java 移植，Stream 并行化 + TornadoVM GPU 加速。
+- [otabuzzman/llm.swift](https://github.com/otabuzzman/llm.swift) - llm.c 的 Swift 移植。
 **llama2.c 移植**（Karpathy 仓库中移植族最庞大者，作者维护着「notable forks」PR 线程）
 - [`srush/llama2.rs`](https://github.com/srush/llama2.rs) - Rust 移植，扩展到 70B + 4-bit GPT-Q 量化、批量 prefill、SIMD。
 - [`gaxler/llama2.rs`](https://github.com/gaxler/llama2.rs) - 另一份 Rust 移植。
@@ -347,6 +366,7 @@
 - [mgrankin/minGPT](https://github.com/mgrankin/minGPT) - minGPT 的 JAX 移植。
 - [pytorch/examples · minGPT-ddp](https://github.com/pytorch/examples/blob/main/distributed/minGPT-ddp/mingpt/model.py) - PyTorch 官方 DDP 教学示例。
 - ⚙️ [Lightning-AI/lit-llama](https://github.com/Lightning-AI/lit-llama) - PyTorch Lightning 团队基于 nanoGPT 的训练框架。
+- [EleutherAI/nanoGPT-mup](https://github.com/EleutherAI/nanoGPT-mup) - nanoGPT fork，集成 Maximal Update Parameterization（μP）用于超参数缩放。
 - ⚙️ [stanford-crfm/levanter](https://github.com/stanford-crfm/levanter) - 基于 JAX 的大模型训练器，明显延续 nanoGPT 血统。
 **MoE / 稀疏**
 - [wolfecameron/nanoMoE](https://github.com/wolfecameron/nanoMoE) - 在 nanoGPT 上加 MoE 层 + 辅助损失 + 稳定性技巧（[博客](https://cameronrwolfe.substack.com/nano-moe)）。
@@ -361,7 +381,7 @@
 ---
 ### Graphify / 原始文件夹优先派
 > 思想种子：🪧 [raw/ folder 推文](https://x.com/karpathy/status/2039805659)（2026/04）- 把 LLM Wiki 的输入当作原始文件的图来处理，最后再编译；反 RAG 更进一步。
-- 🌟 [safishamsi/graphify](https://github.com/safishamsi/graphify) - 旗舰级图优先编译器，处理原始 markdown 文件夹；**6K★ in 48h**。
+- 🌟 [safishamsi/graphify](https://github.com/safishamsi/graphify) - 旗舰级图优先编译器，处理原始 markdown 文件夹；**~40K★ in 26 days，450K+ 下载**。
 - [lucasrosati/claude-code-memory-setup](https://github.com/lucasrosati/claude-code-memory-setup) - 基于图的 Claude Code 记忆布局；据报在智能体召回上节省 **71.5× token**。
 - [amarodeabreu/claude-graph-memory](https://github.com/amarodeabreu/claude-graph-memory) - Claude 端图记忆存储；graphify 的极简伴侣。
 - [memory-graph/memory-graph](https://github.com/memory-graph/memory-graph) - 通用 memory-graph 库，被多个 fork 复用。
@@ -371,6 +391,7 @@
 - 📚 [jordimas/awesome-agentic-engineering](https://github.com/jordimas/awesome-agentic-engineering) - Agentic Engineering 工具、演讲与案例的精选列表。
 - [software-mansion/agentic-engineering](https://github.com/software-mansion/agentic-engineering) - 生产级 Agentic Engineering 脚手架（skills + evals + safety）。
 - 📚 [EthicalML/awesome-agentic-engineering-resources](https://github.com/EthicalML/awesome-agentic-engineering-resources) - Ethical-ML 社区精选。
+- [DimitriGeelen/agentic-engineering-framework](https://github.com/DimitriGeelen/agentic-engineering-framework) - AI 编程智能体治理框架；任务追溯、结构化门控、会话连续性。
 - [K-Dense-AI/karpathy](https://github.com/K-Dense-AI/karpathy) - Agentic ML Engineer 脚手架（同时收录于 [`CLAUDE.md` / Karpathy Skills](#claudemd-karpathy-skills)）。
 ### HN Time Capsule
 > 思想种子：📖 [Auto-grading decade-old HN](http://karpathy.github.io/)（2025/12/10）+ ⭐ [karpathy/hn-time-capsule](https://github.com/karpathy/hn-time-capsule)。LLM 陪审团对旧预测进行回顾性评分。
@@ -406,6 +427,7 @@
 - 📺 [State of GPT](https://www.youtube.com/watch?v=bZQun8Y4L2A)（Microsoft Build 2023） - GPT 训练流水线全景。
 - 📺 [Software is Changing (Again)](https://www.ycombinator.com/library/MW-andrej-karpathy-software-is-changing-again)（YC AI Startup School 2025） - Software 3.0 论纲。
 - 📺 [Let's build GPT: from scratch, in code, spelled out](https://www.youtube.com/watch?v=kCc8FmEb1nY)（2023） - nanoGPT 配套讲座。
+- 📺 [Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)（2025，3.5h） - 面向大众的 LLM 深度解析；无需编程经验。
 - 📺 [Let's build the GPT Tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE)（2024） - minbpe 配套讲座。
 - 📺 [Let's reproduce GPT-2 (124M)](https://www.youtube.com/watch?v=l8pRSuU81PU)（2024，4h） - llm.c 配套讲座。
 ### 博客文章
@@ -414,6 +436,7 @@
 - 📖 [Software 2.0](https://karpathy.medium.com/software-2-0-a64152b37c35)（2017）
 - 📖 [A Recipe for Training Neural Networks](http://karpathy.github.io/2019/04/25/recipe/)（2019）
 - 📖 [Vibe Coding MenuGen](https://karpathy.bearblog.dev/vibe-coding-menugen/)（2025）
+- 📖 [2025 LLM Year in Review](https://karpathy.bearblog.dev/year-in-review-2025/)（2025） - 重塑 LLM 发展的六大范式转变。
 ### 关键推文
 - 🪧 [LLM OS](https://x.com/karpathy/status/1723140519554105733)（2023/11）
 - 🪧 [Vibe coding](https://x.com/karpathy/status/1886192184808149383)（2025/02）
@@ -439,7 +462,9 @@
 | 2024/07 | Eureka Labs 创办 | AI 原生学校 |
 | 2025/02 | Vibe coding 推 + MenuGen | Vibe Coding |
 | 2025/06 | YC 「Software is Changing (Again)」演讲 | Software 3.0 |
+| 2025/01 | Deep Dive into LLMs like ChatGPT 视频 | 教育 |
 | 2025/10 | nanochat 发布 | 全栈 ChatGPT |
+| 2025/12 | 2025 LLM Year in Review 博文 | 反思 |
 | 2025/12 | 「Never been more behind」反思推 | Agentic Engineering 准备 |
 | 2026/01 | Agentic engineering / `CLAUDE.md` 系列 | `CLAUDE.md` |
 | 2026/03 | autoresearch + microgpt gist | AutoResearch |
@@ -481,7 +506,7 @@
 ## 免责声明
 > **警告**：这是一份**精选列表，不是审计报告**。所列项目由各自作者创建并维护。我们不审计、不背书、不保证任何项目的安全性、正确性或许可证合规。
 社区 skills、agents、`CLAUDE.md` 文件可能包含 prompt 注入、工具投毒、隐藏 payload、不安全数据处理等风险。在特权环境中安装或运行任何项目（包括其依赖）之前，请自行复查。
-星标、fork、许可证、维护状态变化很快。本表数据最后核对于 **2026-05-09**，发布前必须重新核实。
+星标、fork、许可证、维护状态变化很快。本表数据最后核对于 **2026-05-13**，发布前必须重新核实。
 ---
 
 ## 许可
